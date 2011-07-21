@@ -1,3 +1,9 @@
+== links ==
+
+* http://slinc.heroku.com/
+* http://slincom.ca/
+
+
 ==TODO==
 
 * upload font files to Squirrel
