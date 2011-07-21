@@ -6,6 +6,14 @@ body{ background: #ccc; }
 footer{ background:#777; width:100%; padding:0px; color:#fff; }
 footer p{ padding:10px 20px;}
 
+#nav_main{ font-size:20px; }
+#nav_secondary{ float:right; font-size:14px; }
+
+body.en fr, body.fr en{ background:#f00; /* TODO DISPLAY NONE ONCE STABLE*/}
+
+
+
+
 
 
 
