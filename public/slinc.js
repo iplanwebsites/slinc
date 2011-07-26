@@ -58,14 +58,19 @@ function loadPortfolio(context, cat){
 				//sortContent(context);
 				
 				//todo: don't run this bit if there's no LI...
+				
+				
 				theShow = $('ul.pf').bxSlider({
 									   displaySlideQty: 4,
 											speed: 300, 
+											infiniteLoop: false,
+											hideControlOnEnd: true, 
+											randomStart: false,
 									   moveSlideQty: 1             
 				}).removeClass('hide');// eo bx init
 			 // theShow.destroyShow();
-			
 			$('.lightboxlink').colorbox();
+			
 			/*
 			$('ul.pf li img').click( function(){
 				alert('open '+ $(this).attr('data-id'));
