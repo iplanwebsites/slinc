@@ -1,15 +1,75 @@
 
+/*
 
-body{ background: #ccc; }
-.wrapper{ margin:10px auto ; width:960px; background:#fff; }
-
-footer{ background:#777; width:100%; padding:0px; color:#fff; }
-footer p{ padding:10px 20px;}
-
-#nav_main{ font-size:20px; }
-#nav_secondary{ float:right; font-size:14px; }
+SLINC GREEN: #bed600
+*/
+body{ background: #fff url('../img/bg1.gif') 0px -350px; }
+a:hover{ color: #bed600;}
 
 body.en fr, body.fr en{ background:#f00; /* TODO DISPLAY NONE ONCE STABLE*/}
+
+
+.wrapper{ margin:20px auto ; width:960px; background:#fff; box-shadow: 0px 3px 10px #888; padding:20px; }
+header.wrapper{margin-top:0;}
+
+
+img.logo{ width:100px; padding-right:100px; }
+
+nav a{ color:#bcbec0; text-decoration:none; margin-left:1em; text-transform:uppercase; }
+nav a:hover{ color:#000; }
+nav a:active{ color:#bed600; }
+
+#nav_main{ font-size:25px; font-weight:bold; }
+#nav_secondary{ float:right; font-size:14px; margin-right:50px;  }
+
+
+
+/*  SECTION: HOME  */
+.bcircle{ 
+	box-shadow: inset 0 0 15px 5px #888; color:#777; opacity:0.9; background:rgba(77,77,77,0.5); 
+	position:relative; width:300px; height:300px;
+	border-radius: 360px; top:0;
+}
+.bcircle.c1{left:50px;}
+.bcircle.c2{left:150px;}
+.bcircle.c3{left:150px;}
+.bcircle.c4{left:200px; background:#ccc;}
+.bcircle.c5{left:0px; background: #3c0; }
+
+/*  SECTIONS  */
+
+section{padding-bottom:100px;}
+
+
+h1{ font-size:50px; text-transform:uppercase; color:#808285; margin-top:20px;}
+p{ font-size:16px; font-weight:bold; color:#58595B; margin-top:30px;}
+p.alt{ color:#808285; }
+.r_col{ width: 50%; background:#bbb; float:right; }
+
+
+
+.service_graph{width:400px; height:400px; border-radius: 360px; background:#f00; color:#fff; }
+.service_graph .circle{ 
+	width: 100px; height: 100px;
+	border-radius: 360px; 
+	 }
+
+
+
+
+
+/* PORTFOLIO */
+
+.pf_wrap{ padding-left:49px;}
+ul.pf{ width:210px; background:#333; padding:0; margin:0; }
+ul.pf li{padding:0; margin:0; width:215px;}
+ul.pf li img{ width:210px;  padding:0; margin:0; border-radius: 20px; background:#ccc;  }
+
+/* FOOTER*/
+
+footer{ background:#777; width:100%; padding:0px; color:#fff; clear:both;}
+footer p{ padding:20px 0px; width:960px; margin:auto; font-size:14px; color:#fff;}
+
 
 
 
