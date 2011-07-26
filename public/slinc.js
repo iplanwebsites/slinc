@@ -3,6 +3,19 @@
 
 $(document).ready(function() {
 
+	function getObjects(obj, key, val) {
+	    var objects = [];
+	    for (var i in obj) {
+	        if (!obj.hasOwnProperty(i)) continue;
+	        if (typeof obj[i] == 'object') {
+	            objects = objects.concat(getObjects(obj[i], key, val));
+	        } else if (i == key && obj[key] == val) {
+	            objects.push(obj);
+	        }
+	    }
+	    return objects;
+	}
+	
 function sortContent(context){
 	//alert('sorting! ='+ lang);
 	if(lang == "fr"){
@@ -35,6 +48,38 @@ function refreshHeader(context){
 }
 
 
+function loadPortfolio(context, cat){
+	//	alert(cat + sammy.pf);
+		var projects = getObjects(sammy.pf, 'cat', cat); // Returns an array of matching objects
+		//alert("proj "+ projects[1]['desc_fr']);
+		
+		context.render('templates/portfolio.html', {lang: lang, projects:projects, cat:cat})
+      .replace(context.$element('#pf_wrap')).then(function(content) {
+				//sortContent(context);
+				
+				
+				$('ul.pf').bxSlider({
+									   displaySlideQty: 4,
+											speed: 300, 
+									   moveSlideQty: 1             
+									}).removeClass('hide');// eo bx init
+			
+			
+			$('ul.pf li img').click( function(){
+				alert('open '+ $(this).attr('data-id'));
+				//TODO: Lightbox init code here!
+				
+			}); //eo click
+			
+			});
+} // eo function load pf
+	
+	
+
+$.getJSON('data/portfolio.json', function(data) { //cached...
+		sammy.pf = data;  
+});
+
 	sammy = Sammy('body', function (context) {
 		this.use(Sammy.Template, 'html'); //default uses .template file ext for templates
 		this.use('Storage');
@@ -58,36 +103,38 @@ function refreshHeader(context){
 		});
 		
 		
-		
+	
 		this.get('/#!/:lang/portfolio', function (context) {// LOAD ROUTE (homepage)
 			context.redirect('/#!/'+this.params['lang']+'/portfolio/pub');
 		});
 		
 		
+	
+	
 		
 		this.get('/#!/:lang/portfolio/:sub', function (context) {// LOAD ROUTE (homepage)
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
 				refreshHeader(context);
 			}
+			context.sub = this.params['sub'];
 			
-			if($('section.portfolio').length <= 0){
-				// main PF section isn't loaded yet...
+			
+			
+			if($('section.portfolio').length <= 0){// if main PF section isn't loaded yet...
+				 context.render('templates/section_portfolio.html', {lang: lang})
+	        .replace(context.$element('#sections')).then(function(content) {
+						sortContent(context);
+						loadPortfolio(context, context.sub); //we then init the portfolio caroussel.
+
+						//alert("pf = " + sammy.pf['test']['desc_fr']);
+
+					});	// eo render
+			}else{
+				loadPortfolio(context, context.sub);
 			}
-			context.render('templates/section_portfolio.html', {lang: lang})
-        .replace(context.$element('#sections')).then(function(content) {
-					sortContent(context);
-					
-					//init PF caroussel
-					// //we then just toggle the visibility of the right bx caroussel.
-					
-					$('.pf.web').bxSlider({
-					   displaySlideQty: 4,
-							speed: 300, 
-					   moveSlideQty: 1             
-					});// eo bx init
-				});		
-		});
+			
+	//	}); //eo route
 		
 	
 			
@@ -98,7 +145,7 @@ function refreshHeader(context){
 					sortContent(context);
 				});	*/	
 				
-		});
+		}); //eo route
 		
 		
 		this.get('/#!/:lang/services', function (context) {// LOAD ROUTE (homepage)
