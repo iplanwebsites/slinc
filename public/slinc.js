@@ -57,19 +57,26 @@ function loadPortfolio(context, cat){
       .replace(context.$element('#pf_wrap')).then(function(content) {
 				//sortContent(context);
 				
-				
-				$('ul.pf').bxSlider({
+				//todo: don't run this bit if there's no LI...
+				theShow = $('ul.pf').bxSlider({
 									   displaySlideQty: 4,
 											speed: 300, 
 									   moveSlideQty: 1             
-									}).removeClass('hide');// eo bx init
+				}).removeClass('hide');// eo bx init
+			 // theShow.destroyShow();
 			
-			
+			$('.lightboxlink').colorbox();
+			/*
 			$('ul.pf li img').click( function(){
 				alert('open '+ $(this).attr('data-id'));
 				//TODO: Lightbox init code here!
 				
+				//previous	"previous"	Text for the previous button in a shared relation group (same values for 'rel' attribute).
+			//	next	"next"	Text for the next button in a shared relation group (same values for 'rel' attribute).
+			//	close
+				
 			}); //eo click
+			*/
 			
 			});
 } // eo function load pf
