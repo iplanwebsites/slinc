@@ -65,6 +65,11 @@ ul.pf{ width:210px; padding:0; margin:0; height:170px; overflow:hidden; }
 ul.pf li{padding:0; margin:0; width:215px;}
 ul.pf li img{ width:210px;  padding:0; margin:0; border-radius: 20px; background:#ccc; opacity:0.8; cursor:pointer;  }
 ul.pf li img:hover{opacity:1;}
+
+
+p.half_width{ width:45%; margin-left:50px;}
+
+
 /* FOOTER*/
 
 footer{ background:#777; width:100%; padding:0px; color:#fff; clear:both;}
