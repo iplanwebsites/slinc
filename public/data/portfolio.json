@@ -115,14 +115,24 @@
         "title_fr": "Nom du projet",
         "desc_en": "This is the english description",
         "desc_fr": "This is my FRENCH description, it can be long..."
-    },
-    {
-        "id": "uni_training",
-        "nbImg": "1",
-        "cat": "pub",
-        "title_en": "333",
-        "title_fr": "Nom du projet",
-        "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
-    }
+    }		,
+		    {
+		        "id": "uni_training",
+		        "nbImg": "1",
+		        "cat": "pub",
+		        "title_en": "333",
+		        "title_fr": "Nom du projet",
+		        "desc_en": "This is the english description",
+		        "desc_fr": "This is my FRENCH description, it can be long..."
+		    }
+				,
+		    {
+		        "id": "jm_web",
+		        "nbImg": "1",
+		        "cat": "web",
+		        "title_en": "333",
+		        "title_fr": "Nom du projet",
+		        "desc_en": "This is the english description",
+		        "desc_fr": "This is my FRENCH description, it can be long..."
+		    }
 ]
