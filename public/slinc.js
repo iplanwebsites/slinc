@@ -66,6 +66,7 @@ function loadPortfolio(context, cat){
 											infiniteLoop: false,
 											hideControlOnEnd: true, 
 											randomStart: false,
+											returnFocus: false,
 									   moveSlideQty: 1             
 				}).removeClass('hide');// eo bx init
 			 // theShow.destroyShow();
