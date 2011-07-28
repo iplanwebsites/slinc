@@ -2,6 +2,16 @@
 /*
 
 SLINC GREEN: #bed600
+
+
+
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+
+
 */
 body{ background: #fff url('../img/bg1.gif') 0px -350px; }
 a:hover{ color: #bed600;}
@@ -9,13 +19,19 @@ a:hover{ color: #bed600;}
 body.en fr, body.fr en{ background:#f00; /* TODO DISPLAY NONE ONCE STABLE*/}
 
 .not_displayed{ display:none; }
-.wrapper{ margin:20px auto ; width:960px; background:#fff; box-shadow: 0px 3px 10px #888; padding:20px; }
+.wrapper{ margin:20px auto ; width:960px; background:#fff; box-shadow: 0px 3px 10px #888; padding:20px; 
+	}
 header.wrapper{margin-top:0;}
 
 
 img.logo{ width:100px; padding-right:100px; }
 
-nav a{ color:#bcbec0; text-decoration:none; margin-left:1em; text-transform:uppercase; }
+nav a{ color:#bcbec0; text-decoration:none; margin-left:1em; text-transform:uppercase;
+	-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out; }
 nav a:hover{ color:#000; }
 nav a:active{ color:#bed600; }
 
@@ -37,8 +53,13 @@ nav a:active{ color:#bed600; }
 .bcircle.c5{left:0px; background: #3c0; }
 
 /*  SECTIONS  */
+#sections{
 
-section{padding-bottom:100px;}
+	}
+	
+section{
+	padding-bottom:100px;
+	}
 
 
 h1{ font-size:50px; text-transform:uppercase; color:#808285; margin-top:20px;}
