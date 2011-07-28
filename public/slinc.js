@@ -45,6 +45,11 @@ function refreshHeader(context){
     .replace(context.$element('header')).then(function(content) {
 			//TODO: bind event specefic to HEADER!
 		});
+		
+		context.render('templates/footer.html', {lang: lang})
+	    .replace(context.$element('footer')).then(function(content) {
+				//TODO: bind event specefic to Footer!
+			});
 }
 
 
