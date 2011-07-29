@@ -13,10 +13,12 @@ transition: all 0.2s ease-in-out;
 
 */
 .portfolio h1{ text-align:right; float:right;}
-.left
-body{ background: #fff url('../img/bg1.gif') 0px -350px;
+
+body{ 
+background: #fff url('../img/bg1.gif') 0px -350px;
 font-family: 'GothamBook';
  }
+
 h1, h2, h3, h4, h5, h6, h7{
 	font-family: 'GothamBold';
 }
@@ -26,25 +28,31 @@ a:hover{ color: #bed600;}
 body.en fr, body.fr en{ background:#f00; /* TODO DISPLAY NONE ONCE STABLE*/}
 
 .not_displayed{ display:none; }
-.wrapper{ margin:20px auto ; width:960px; background:#fff; box-shadow: 0px 3px 10px #888; padding:20px; 
+.wrapper{ 
+	margin:20px auto ; width:960px; background:#fff; box-shadow: 0px 3px 10px #888; 
+	 padding: 0 20px;
+	padding-top:10px;
 	}
-header.wrapper{margin-top:0;}
+header.wrapper{margin-top:0px; padding:0px; padding: 0 20px; padding-top:5px; height:70px; margin:0 auto;  }
 
 
-img.logo{ width:100px; padding-right:100px; }
+img.logo{ width:100px; padding-right:70px; float:left; margin-top:-20px; }
 
 nav a{ color:#bcbec0; text-decoration:none; margin-left:1em; text-transform:uppercase;
 	-webkit-transition: all 0.2s ease-in-out;
 -moz-transition: all 0.2s ease-in-out;
 -o-transition: all 0.2s ease-in-out;
 -ms-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out; }
+transition: all 0.2s ease-in-out;
+
+}
 nav a:hover{ color:#000; }
 nav a:active{ color:#bed600; }
 
-#nav_main{ font-size:25px; font-weight:bold; }
-#nav_secondary{ float:right; font-size:14px; margin-right:50px;  }
-
+#nav_main{ font-size:18px; margin-top:20px; margin-left:45px; font-family:'GothamBold'; }
+#nav_main a{ margin-right:30px;}
+#nav_secondary{ float:right; font-size:14px; margin-right:50px; margin-top:25px;font-family:'GothamBook';  }
+#nav_secondary a.contact{color:#bed600;}
 
 
 /*  HOME  */
