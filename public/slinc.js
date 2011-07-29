@@ -58,6 +58,10 @@ function loadPortfolio(context, cat){
 		var projects = getObjects(sammy.pf, 'cat', cat); // Returns an array of matching objects
 		//alert("proj "+ projects[1]['desc_fr']);
 		
+		//first, we update the nav...
+		$('.portfolio nav a.active').removeClass('active');
+		$('.portfolio nav a.'+cat).addClass('active');
+		
 		context.render('templates/portfolio.html', {lang: lang, projects:projects, cat:cat})
       .replace(context.$element('#pf_wrap')).then(function(content) {
 				//sortContent(context);

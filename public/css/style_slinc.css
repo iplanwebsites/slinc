@@ -11,9 +11,16 @@ SLINC GREEN: #bed600
 -ms-transition: all 0.2s ease-in-out;
 transition: all 0.2s ease-in-out;
 
-
 */
-body{ background: #fff url('../img/bg1.gif') 0px -350px; }
+.portfolio h1{ text-align:right; float:right;}
+.left
+body{ background: #fff url('../img/bg1.gif') 0px -350px;
+font-family: 'GothamBook';
+ }
+h1, h2, h3, h4, h5, h6, h7{
+	font-family: 'GothamBold';
+}
+
 a:hover{ color: #bed600;}
 
 body.en fr, body.fr en{ background:#f00; /* TODO DISPLAY NONE ONCE STABLE*/}
@@ -40,17 +47,44 @@ nav a:active{ color:#bed600; }
 
 
 
-/*  SECTION: HOME  */
+/*  HOME  */
+
+.graph_home{position:absolute; margin-left:40px; margin-top:30px;}
 .bcircle{ 
 	box-shadow: inset 0 0 15px 5px #888; color:#777; opacity:0.9; background:rgba(77,77,77,0.5); 
-	position:relative; width:300px; height:300px;
-	border-radius: 360px; top:0;
+	 width:440px; 
+	height:320px;
+	padding-top:120px;
+	border-radius: 440px; 
+	top:20px;
+	position:absolute;
+	color:#fff;
+	text-align:center;
+	text-transform:uppercase;
 }
-.bcircle.c1{left:50px;}
-.bcircle.c2{left:150px;}
-.bcircle.c3{left:150px;}
-.bcircle.c4{left:200px; background:#ccc;}
-.bcircle.c5{left:0px; background: #3c0; }
+.bcircle strong{ 
+	font-size:60px; font-family:'GothamBold'; 
+letter-spacing:-3px; 
+line-height:1em;
+}
+.bcircle em{ font-size:20px; font-family:'GothamBold'; padding-top:50px; display:block; font-style:normal; }
+.bcircle.c1{left:110px;}
+.bcircle.c2{left:330px;}
+.bcircle.c1, .bcircle.c2{ opacity:0.3;}
+.bcircle.c4, .bcircle.c5{ 
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.bcircle.c4{left:440px; background:#aaa; box-shadow: inset 0 0 15px 5px #999;}
+.bcircle.c4:hover{left:420px; padding-left:20px; padding-right:20px; padding-top:140px; padding-bottom:20px; top:0px; opacity:1; z-index:1;}
+.bcircle.c5{left:0px; background: #bed600; box-shadow: inset 0 0 15px 5px #aacc00;}
+.bcircle.c5:hover{left:-20px; padding-left:20px; padding-right:20px; padding-top:140px; padding-bottom:20px; top:0px; opacity:1;}
+.spacer_400{ padding-bottom:495px;}
+
+
 
 /*  SECTIONS  */
 #sections{
@@ -65,7 +99,7 @@ section{
 h1{ font-size:50px; text-transform:uppercase; color:#808285; margin-top:20px;}
 p{ font-size:16px; font-weight:bold; color:#58595B; margin-top:30px;}
 p.alt{ color:#808285; }
-.r_col{ width: 50%; background:#bbb; float:right; }
+.r_col{ width: 50%; float:right; }
 
 
 
@@ -87,9 +121,38 @@ ul.pf li{padding:0; margin:0; width:215px;  }
 ul.pf li img{ width:210px;  padding:0; margin:0; border-radius: 20px; background:#ccc; opacity:0.8; cursor:pointer;  }
 ul.pf li img:hover{opacity:1;}
 
+.spacer_100{ padding-bottom:150px;}
 
 p.half_width{ width:45%; margin-left:50px;}
 
+
+.portfolio nav{ position:relative; margin-top:20px;}
+
+.portfolio nav a {
+	position:absolute;
+	top:0px;
+	width: 85px; height: 53px;
+	padding-top:32px;
+	border-radius: 360px;
+	text-align:center;
+	background:#999;
+	display:block;
+	
+	color:#fff;
+	opacity:0.8;
+	font-family:'GothamBold';
+	font-size:14px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+}
+.portfolio nav a.design{left:70px;z-index:1; background:#bbb;}
+.portfolio nav a.web{left:140px; background:#555; }
+.portfolio nav a.active{ background:#bed600; z-index:3; opacity:0.9; }
+.portfolio nav a:hover{ opacity:1; z-index:2; background:#444; cursor:pointer; }
 
 /* FOOTER*/
 
