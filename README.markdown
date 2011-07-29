@@ -8,6 +8,7 @@ links
 TODO
 ------
 
+- Use Jquery analytics Plugin instead of the regular code snip...
 - upload DIN font files to Squirrel
 - comment-out unused font from CSS...
 - Slice images
