@@ -19,6 +19,8 @@ background: #fff url('../img/bg1.gif') 0px -350px;
 font-family: 'GothamBook';
  }
 
+small{ font-family: arial, verdana, helvetica; }
+
 h1, h2, h3, h4, h5, h6, h7{
 	font-family: 'GothamBold';
 }
@@ -167,7 +169,9 @@ p.half_width{ width:45%; margin-left:50px;}
 footer{ background:#777; width:100%; padding:0px; color:#fff; clear:both;}
 footer p{ padding:20px 0px; width:960px; margin:auto; font-size:14px; color:#fff;}
 
-
+footer em{opacity: 0.6; font-size:12px;}
+footer a, footer a:hover, footer a:visited{ color:#fff; text-decoration:underline;}
+footer a:active{color:#fff;}
 .hide{ opacity:0; }
 
 
