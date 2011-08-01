@@ -198,6 +198,22 @@ transition: all 0.6s ease-in-out;}
 .equipe nav a img:hover{ opacity:0.8;}
 .equipe nav a.active img{ opacity:0.5;}
 
+
+
+
+
+/* CONTACT
+------------------------------ */
+
+.contact small p{font-size:14px; width:350px;}
+
+.contact .infos{ margin-top:50px; font-size:16px; line-height:1.5em;}
+
+.contact .infos a{ color:#555; text-decoration:none; line-height:1.7em; margin:0px;}
+
+.contact .r_col{ margin-bottom:30px;}
+
+
 /* FOOTER*/
 
 footer{ background:#777; width:100%; padding:0px; color:#fff; clear:both;}
