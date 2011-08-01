@@ -96,6 +96,26 @@ function loadPortfolio(context, cat){
 			});
 } // eo function load pf
 	
+	// LOAD BIO
+function loadBio(context, cat){
+		var projects = getObjects(sammy.pf, 'cat', cat); // Returns an array of matching objects
+		//first, we update the nav...
+		$('.equipe nav a.active').removeClass('active');
+		
+		$('.equipe nav a.'+cat).addClass('active');
+		
+		$('.equipe .box .bio.out').removeClass('out');//cleanup old animation leftover
+		$('.equipe .box .bio.active').removeClass('active').addClass('out');
+		$('.equipe .box .bio.'+cat).addClass('active');
+		//alert($('.equipe .box .bio.'+cat).length + cat);
+		
+		
+	/*	context.render('templates/portfolio.html', {lang: lang, projects:projects, cat:cat})
+      .replace(context.$element('#pf_wrap')).then(function(content) {
+			$('.lightboxlink').colorbox();
+			});*/
+			
+} // eo function load pf
 	
 
 $.getJSON('data/portfolio.json', function(data) { //cached...
@@ -124,15 +144,14 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 				});		
 		});
 		
-		
+		// PORTFOLIO
+		// --------------------------------------------
 	
 		this.get('/#!/:lang/portfolio', function (context) {// LOAD ROUTE (homepage)
 			context.redirect('/#!/'+this.params['lang']+'/portfolio/pub');
 		});
 		
-		
-	
-	
+
 		
 		this.get('/#!/:lang/portfolio/:sub', function (context) {// LOAD ROUTE (homepage)
 			if(lang != this.params['lang']){ 
@@ -140,8 +159,6 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 				refreshHeader(context);
 			}
 			context.sub = this.params['sub'];
-			
-			
 			
 			if($('section.portfolio').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_portfolio.html', {lang: lang})
@@ -155,21 +172,41 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}else{
 				loadPortfolio(context, context.sub);
 			}
-			
-	//	}); //eo route
-		
+
+		}); //eo route
+		// 
 	
+		
+		// EQUIPE
+		// --------------------------------------------
+	
+		this.get('/#!/:lang/equipe', function (context) {// LOAD ROUTE (homepage)
+			context.redirect('/#!/'+this.params['lang']+'/equipe/francis');
+		});
+		
+		this.get('/#!/:lang/equipe/:sub', function (context) {// LOAD ROUTE (homepage)
+			if(lang != this.params['lang']){ 
+				setLang(this.params['lang']);
+				refreshHeader(context);
+			}
+			context.sub = this.params['sub'];
 			
-			
-			/*
-			context.render('templates/section_home.html', {lang: lang})
-        .replace(context.$element('#sections')).then(function(content) {
-					sortContent(context);
-				});	*/	
-				
+			if($('section.equipe').length <= 0){// if main PF section isn't loaded yet...
+				 context.render('templates/section_equipe.html', {lang: lang})
+	        .replace(context.$element('#sections')).then(function(content) {
+						sortContent(context);
+						loadBio(context, context.sub); //we then init the portfolio caroussel.
+					});	// eo render
+			}else{
+				loadBio(context, context.sub);
+			}
 		}); //eo route
 		
 		
+		
+		// SERVICE
+		// --------------------------------------------
+
 		this.get('/#!/:lang/services', function (context) {// LOAD ROUTE (homepage)
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
