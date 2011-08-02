@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
 
-//redirection.
+//redirection. - remove once site is live...
 if(window.location.hostname == 'www.slincom.ca'){
 	window.location = "http://slincom.ca/page2.php";
 }
