@@ -124,9 +124,9 @@ body.contact header nav a.contact{color:#bed600; text-decoration:underline;}
 	text-align:center;
 	text-transform:uppercase;
 	-webkit-transition: all 0.9s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.9s ease-in-out;
+	-o-transition: all 0.9s ease-in-out;
+	-ms-transition: all 0.9s ease-in-out;
 	transition: all 0.9s ease-in-out;
 }
 .graph_home.centered .bcircle{left:175px;
