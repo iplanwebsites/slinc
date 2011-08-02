@@ -13,6 +13,28 @@ transition: all 0.2s ease-in-out;
 
 */
 
+#sections{ position:relative; height:600px; overflow:hidden; }
+section{
+	-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+
+}
+
+section.in{
+	opacity:0;
+	margin-top:-10px;
+}
+
+section.out{
+	opacity:0; 
+	margin:0; padding:0;
+	margin-top:30px;
+
+}
+
 section.home p.invisible{opacity:0; 	
 }
 section.home p{opacity:1; -webkit-transition: all 1.2s ease-in-out;

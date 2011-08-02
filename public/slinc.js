@@ -130,8 +130,18 @@ function loadSection(context, cat){
 	
 		//we trigger page transition
 		$('section.out').removeClass('out');//cleanup old animation leftover
-		$('section.active').removeClass('active').addClass('out');
+		$('section.active').removeClass('active').addClass('out').delay(300).queue(function(next){
+			$('section.out').remove(); //we remove the DOM node once anim is over...
+			$('section.in').removeClass('in');
+			next();
+		}); //eo queue
 		$('section.'+cat).addClass('active');
+		
+		//$('section:not(.active)').remove(); 
+		
+		//Once the anim is over, destroy the old sectoin node...
+		//$('.graph_home.centered')
+		
 } // eo function load pf
 
 	
@@ -157,7 +167,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 				refreshHeader(context);
 			}
 			context.render('templates/section_home.html', {lang: lang})
-        .replace(context.$element('#sections')).then(function(content) {
+        .appendTo(context.$element('#sections')).then(function(content) {
 					loadSection(context, 'home'); 
 				
 
@@ -188,7 +198,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			
 			if($('section.portfolio').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_portfolio.html', {lang: lang})
-	        .replace(context.$element('#sections')).then(function(content) {
+	        .appendTo(context.$element('#sections')).then(function(content) {
 						loadSection(context, 'portfolio'); 
 				
 						//sortContent(context);
@@ -221,7 +231,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			
 			if($('section.equipe').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_equipe.html', {lang: lang})
-	        .replace(context.$element('#sections')).then(function(content) {
+	        .appendTo(context.$element('#sections')).then(function(content) {
 						loadSection(context, 'equipe'); 
 						
 						//sortContent(context);
@@ -243,8 +253,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 				refreshHeader(context);
 			}
 			context.render('templates/section_service.html', {lang: lang})
-        .replace(context.$element('#sections')).then(function(content) {
-					loadSection(context, 'services'); 
+        .appendTo(context.$element('#sections')).then(function(content) {
+					loadSection(context, 'service'); 
 				
 					//sortContent(context);
 					
@@ -287,7 +297,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			
 			context.render('templates/section_contact.html', {lang: lang})
-        .replace(context.$element('#sections')).then(function(content) {
+        .appendTo(context.$element('#sections')).then(function(content) {
 					loadSection(context, 'contact'); 
 					
 						
