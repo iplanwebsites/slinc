@@ -3,6 +3,12 @@
 
 $(document).ready(function() {
 
+//redirection.
+if(window.location.hostname == 'www.slincom.ca'){
+	window.location = "http://slincom.com/";
+}
+
+
 	function getObjects(obj, key, val) {
 	    var objects = [];
 	    for (var i in obj) {
