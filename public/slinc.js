@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 //redirection.
 if(window.location.hostname == 'www.slincom.ca'){
-	window.location = "http://slincom.ca/";
+	window.location = "http://slincom.ca/page2.php";
 }
 
 
