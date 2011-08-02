@@ -25,7 +25,7 @@ transition: all 1.2s ease-in-out;}
 
 body{ 
 background: #fff url('../img/bg1.gif') 0px -350px;
-font-family: 'GothamBook';
+font-family: 'din reg';
 /*
 	-webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
@@ -60,7 +60,7 @@ body.rotate.equipe{
 small{ font-family: arial, verdana, helvetica; }
 
 h1, h2, h3, h4, h5, h6, h7{
-	font-family: 'GothamBold';
+	font-family: 'din bold';
 }
 
 a:hover{ color: #bed600;}
@@ -90,9 +90,9 @@ transition: all 0.2s ease-in-out;
 nav a:hover{ color:#000; }
 nav a:active{ color:#bed600; }
 
-#nav_main{ font-size:18px; margin-top:20px; margin-left:45px; font-family:'GothamBold'; }
+#nav_main{ font-size:18px; margin-top:20px; margin-left:45px; font-family:'din bold'; }
 #nav_main a{ margin-right:30px;}
-#nav_secondary{ float:right; font-size:14px; margin-right:50px; margin-top:25px;font-family:'GothamBook';  }
+#nav_secondary{ float:right; font-size:14px; margin-right:50px; margin-top:25px;font-family:'din bold';  }
 #nav_secondary a.contact{color:#bed600;}
 
 /*active states in header nav */
@@ -138,11 +138,11 @@ body.contact header nav a.contact{color:#bed600; text-decoration:underline;}
 	} 
 
 .bcircle strong{ 
-	font-size:50px; font-family:'GothamBold'; 
+	font-size:50px; font-family:'din bold'; 
 letter-spacing:-3px; 
 line-height:1em;
 }
-.bcircle em{ font-size:16px; font-family:'GothamBold'; padding-top:30px; display:block; font-style:normal; }
+.bcircle em{ font-size:16px; font-family:'din bold'; padding-top:30px; display:block; font-style:normal; }
 .bcircle.c1{left:85px;}
 .bcircle.c2{left:260px;}
 .bcircle.c1, .bcircle.c2{ opacity:0.3;}
@@ -198,8 +198,9 @@ p.alt{ color:#808285; }
 
 .service_graph{width:390px; height:390px; border-radius: 400px; background:#bed600; color:#fff; 
 	margin-top:30px; margin-bottom:20px;
-	text-align:center; position:relative; font-family: 'GothamBold'; }
-.service_graph h3{ color:#fff; padding-top:165px; font-size:20px; text-transform:uppercase; position:absolute; text-align:center; width:390px;}
+	text-align:center; position:relative; font-family: 'din bold cond'; }
+.service_graph h3{ color:#fff; padding-top:165px; font-size:20px; text-transform:uppercase; 
+	position:absolute; text-align:center; width:390px;}
 .service_graph .circle{ 
 	width: 130px; height: 130px;
 	background:rgba(68,75,10,0.2);
@@ -208,9 +209,9 @@ p.alt{ color:#808285; }
 	position:absolute;
 	margin-left:-65px;
 	margin-top:-65px;
-	font-size:11px;
+	font-size:20px;
 	text-transform:uppercase;
-	font-family: 'GothamBold';
+	font-family: 'din bold cond';
 	-webkit-transition: all 0.7s ease-in-out;
 	-moz-transition: all 0.7s ease-in-out;
 	-o-transition: all 0.7s ease-in-out;
