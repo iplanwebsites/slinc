@@ -21,7 +21,7 @@ if(window.location.hostname == 'www.slincom.ca'){
 	    }
 	    return objects;
 	}
-	
+	/*
 function sortContent(context){
 	//alert('sorting! ='+ lang);
 	if(lang == "fr"){
@@ -29,7 +29,7 @@ function sortContent(context){
 	}else{
 		$('#sections fr').remove();
 	}
-}
+}*/
 
 function setLang(langParam){
 	lang = langParam;
@@ -103,7 +103,6 @@ function loadPortfolio(context, cat){
 	
 	// LOAD BIO
 function loadBio(context, cat){
-		var projects = getObjects(sammy.pf, 'cat', cat); // Returns an array of matching objects
 		//first, we update the nav...
 		$('.equipe nav a.active').removeClass('active');
 		
@@ -121,6 +120,20 @@ function loadBio(context, cat){
 			});*/
 			
 } // eo function load pf
+	
+	
+	
+function loadSection(context, cat){
+		//we set body class
+		$('body').removeClass('home portfolio services contact equipe');
+		$('body').addClass(cat);
+	
+		//we trigger page transition
+		$('section.out').removeClass('out');//cleanup old animation leftover
+		$('section.active').removeClass('active').addClass('out');
+		$('section.'+cat).addClass('active');
+} // eo function load pf
+
 	
 
 $.getJSON('data/portfolio.json', function(data) { //cached...
@@ -145,15 +158,15 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			context.render('templates/section_home.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
-					$('body').removeClass('home portfolio services contact equipe');
-					$('body').addClass('home');
+					loadSection(context, 'home'); 
+				
 
 					$('.graph_home.centered').delay(1000).queue(function(next){
 						$('.graph_home.centered').removeClass('centered'); //animate homepage circles to take their places...
 						$('section.home p.invisible').removeClass('invisible');
 						next();
 					}); //eo queue
-					sortContent(context);
+					//sortContent(context);
 				});		
 		});
 		
@@ -176,9 +189,9 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			if($('section.portfolio').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_portfolio.html', {lang: lang})
 	        .replace(context.$element('#sections')).then(function(content) {
-						$('body').removeClass('home portfolio services contact equipe');
-						$('body').addClass('portfolio');
-						sortContent(context);
+						loadSection(context, 'portfolio'); 
+				
+						//sortContent(context);
 						loadPortfolio(context, context.sub); //we then init the portfolio caroussel.
 
 						//alert("pf = " + sammy.pf['test']['desc_fr']);
@@ -209,9 +222,9 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			if($('section.equipe').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_equipe.html', {lang: lang})
 	        .replace(context.$element('#sections')).then(function(content) {
-						$('body').removeClass('home portfolio services contact equipe');
-						$('body').addClass('equipe');
-						sortContent(context);
+						loadSection(context, 'equipe'); 
+						
+						//sortContent(context);
 						loadBio(context, context.sub); //we then init the portfolio caroussel.
 					});	// eo render
 			}else{
@@ -231,9 +244,9 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			context.render('templates/section_service.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
-					$('body').removeClass('home portfolio services contact equipe');
-					$('body').addClass('services');
-					sortContent(context);
+					loadSection(context, 'services'); 
+				
+					//sortContent(context);
 					
 					if(typeof(graphInterval) != 'undefined'){
 						clearInterval(graphInterval);
@@ -275,10 +288,10 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			
 			context.render('templates/section_contact.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
-					$('body').removeClass('home portfolio services contact equipe');
-					$('body').addClass('contact');
+					loadSection(context, 'contact'); 
+					
 						
-					sortContent(context);
+					//sortContent(context);
 					//TODO: bind event specefic to this section!
 				});		
 		}); //end "get #/"
