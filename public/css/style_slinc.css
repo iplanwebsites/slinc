@@ -189,10 +189,16 @@ p.alt{ color:#808285; }
 
 
 
+
+
+
+
 /* service
 -------------------- */
 
-.service_graph{width:390px; height:390px; border-radius: 400px; background:#bed600; color:#fff;  text-align:center; position:relative; font-family: 'GothamBold'; }
+.service_graph{width:390px; height:390px; border-radius: 400px; background:#bed600; color:#fff; 
+	margin-top:30px; margin-bottom:20px;
+	text-align:center; position:relative; font-family: 'GothamBold'; }
 .service_graph h3{ color:#fff; padding-top:165px; font-size:20px; text-transform:uppercase; position:absolute; text-align:center; width:390px;}
 .service_graph .circle{ 
 	width: 130px; height: 130px;
