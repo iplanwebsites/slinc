@@ -234,10 +234,11 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 					$('body').removeClass('home portfolio services contact equipe');
 					$('body').addClass('services');
 					sortContent(context);
-					//TODO: !!! JQUERY FOR animated GRAPH...
 					
+					if(typeof(graphInterval) != 'undefined'){
+						clearInterval(graphInterval);
+					} //so it doesn't double-up
 					graphInterval = setInterval(function() {
-//alert('je');
 					if($('.service_graph .circle.c1').hasClass('active')){
 						$('.service_graph .circle.active').removeClass('active');
 						$('.service_graph .circle.c2').addClass('active');

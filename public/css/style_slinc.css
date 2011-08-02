@@ -196,7 +196,7 @@ p.alt{ color:#808285; }
 .service_graph h3{ color:#fff; padding-top:165px; font-size:20px; text-transform:uppercase; position:absolute; text-align:center; width:390px;}
 .service_graph .circle{ 
 	width: 130px; height: 130px;
-	background:rgba(55,55,55,0.3);
+	background:rgba(68,75,10,0.2);
 	border-radius: 360px; 
 	text-align:center;
 	position:absolute;
@@ -215,7 +215,8 @@ p.alt{ color:#808285; }
 	width: 140px; height: 140px;
 	margin-left:-70px;
 	margin-top:-70px;
-	background:rgba(205,25,200,0.8);
+	
+	background:rgba(68,75,10,0.9);
 }
 .service_graph .circle span{ margin-top:40%;  position:relative; display:block;}
 
