@@ -7,13 +7,15 @@ links
 
 TODO
 ------
+
 - h1 float glitch during transitions...
+
 - Use Jquery analytics Plugin instead of the regular code snip...
+
 - Figure out DIN stuff...
 
 - Position css dot on active section in header nav
-- reduce page load jumping (possibly lazy-load tempaltes first?): especially on PF page...
-- page transitions.
+
 
 
 
