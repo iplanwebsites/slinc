@@ -139,8 +139,14 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			context.render('templates/section_home.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
-					$('body.rotate').removeClass('home portfolio services contact equipe');
-					$('body.rotate').addClass('home');
+					$('body').removeClass('home portfolio services contact equipe');
+					$('body').addClass('home');
+
+					$('.graph_home.centered').delay(1000).queue(function(next){
+						$('.graph_home.centered').removeClass('centered'); //animate homepage circles to take their places...
+						$('section.home p.invisible').removeClass('invisible');
+						next();
+					}); //eo queue
 					sortContent(context);
 				});		
 		});
@@ -164,8 +170,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			if($('section.portfolio').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_portfolio.html', {lang: lang})
 	        .replace(context.$element('#sections')).then(function(content) {
-						$('body.rotate').removeClass('home portfolio services contact equipe');
-						$('body.rotate').addClass('portfolio');
+						$('body').removeClass('home portfolio services contact equipe');
+						$('body').addClass('portfolio');
 						sortContent(context);
 						loadPortfolio(context, context.sub); //we then init the portfolio caroussel.
 
@@ -197,8 +203,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			if($('section.equipe').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_equipe.html', {lang: lang})
 	        .replace(context.$element('#sections')).then(function(content) {
-						$('body.rotate').removeClass('home portfolio services contact equipe');
-						$('body.rotate').addClass('equipe');
+						$('body').removeClass('home portfolio services contact equipe');
+						$('body').addClass('equipe');
 						sortContent(context);
 						loadBio(context, context.sub); //we then init the portfolio caroussel.
 					});	// eo render
@@ -219,8 +225,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			context.render('templates/section_service.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
-					$('body.rotate').removeClass('home portfolio services contact equipe');
-					$('body.rotate').addClass('services');
+					$('body').removeClass('home portfolio services contact equipe');
+					$('body').addClass('services');
 					sortContent(context);
 					//TODO: !!! JQUERY FOR animated GRAPH...
 					
@@ -262,8 +268,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			
 			context.render('templates/section_contact.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
-					$('body.rotate').removeClass('home portfolio services contact equipe');
-					$('body.rotate').addClass('contact');
+					$('body').removeClass('home portfolio services contact equipe');
+					$('body').addClass('contact');
 						
 					sortContent(context);
 					//TODO: bind event specefic to this section!
