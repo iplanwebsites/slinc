@@ -16,7 +16,7 @@ TODO
 
 - Position css dot on active section in header nav
 
-
+- Setup template Cache in Sammy.
 
 
 On Launch
