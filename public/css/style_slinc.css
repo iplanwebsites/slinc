@@ -175,7 +175,7 @@ p.alt{ color:#808285; }
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	 }
-.service_graph .circle:hover{
+.service_graph .circle.active{
 	width: 140px; height: 140px;
 	margin-left:-70px;
 	margin-top:-70px;

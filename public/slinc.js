@@ -222,6 +222,35 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 					$('body.rotate').removeClass('home portfolio services contact equipe');
 					$('body.rotate').addClass('services');
 					sortContent(context);
+					//TODO: !!! JQUERY FOR animated GRAPH...
+					
+					graphInterval = setInterval(function() {
+//alert('je');
+					if($('.service_graph .circle.c1').hasClass('active')){
+						$('.service_graph .circle.active').removeClass('active');
+						$('.service_graph .circle.c2').addClass('active');
+					}else	if($('.service_graph .circle.c2').hasClass('active')){
+							$('.service_graph .circle.active').removeClass('active');
+							$('.service_graph .circle.c3').addClass('active');
+						}else	if($('.service_graph .circle.c3').hasClass('active')){
+								$('.service_graph .circle.active').removeClass('active');
+								$('.service_graph .circle.c4').addClass('active');
+							}else	if($('.service_graph .circle.c4').hasClass('active')){
+									$('.service_graph .circle.active').removeClass('active');
+									$('.service_graph .circle.c5').addClass('active');
+								}else	if($('.service_graph .circle.c5').hasClass('active')){
+										$('.service_graph .circle.active').removeClass('active');
+										$('.service_graph .circle.c6').addClass('active');
+									}else	if($('.service_graph .circle.c6').hasClass('active')){
+											$('.service_graph .circle.active').removeClass('active');
+											$('.service_graph .circle.c1').addClass('active');
+										}else{
+											//We're not on the service page anymore... destroy interval!
+											clearInterval(graphInterval);
+										}
+						}, 2000); //2 seconds rotating anim
+				
+					
 				});		
 		});
 		
