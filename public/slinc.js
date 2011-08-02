@@ -64,7 +64,6 @@ function loadPortfolio(context, cat){
 		
 		context.render('templates/portfolio.html', {lang: lang, projects:projects, cat:cat})
       .replace(context.$element('#pf_wrap')).then(function(content) {
-				//sortContent(context);
 				
 				//todo: don't run this bit if there's no LI...
 				
@@ -140,6 +139,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			context.render('templates/section_home.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
+					$('body.rotate').removeClass('home portfolio services contact equipe');
+					$('body.rotate').addClass('home');
 					sortContent(context);
 				});		
 		});
@@ -163,6 +164,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			if($('section.portfolio').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_portfolio.html', {lang: lang})
 	        .replace(context.$element('#sections')).then(function(content) {
+						$('body.rotate').removeClass('home portfolio services contact equipe');
+						$('body.rotate').addClass('portfolio');
 						sortContent(context);
 						loadPortfolio(context, context.sub); //we then init the portfolio caroussel.
 
@@ -194,6 +197,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			if($('section.equipe').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_equipe.html', {lang: lang})
 	        .replace(context.$element('#sections')).then(function(content) {
+						$('body.rotate').removeClass('home portfolio services contact equipe');
+						$('body.rotate').addClass('equipe');
 						sortContent(context);
 						loadBio(context, context.sub); //we then init the portfolio caroussel.
 					});	// eo render
@@ -214,6 +219,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			context.render('templates/section_service.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
+					$('body.rotate').removeClass('home portfolio services contact equipe');
+					$('body.rotate').addClass('services');
 					sortContent(context);
 				});		
 		});
@@ -226,6 +233,8 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			
 			context.render('templates/section_contact.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
+					$('body.rotate').removeClass('home portfolio services contact equipe');
+					$('body.rotate').addClass('contact');
 						
 					sortContent(context);
 					//TODO: bind event specefic to this section!

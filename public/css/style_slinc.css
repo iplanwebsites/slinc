@@ -17,7 +17,43 @@ transition: all 0.2s ease-in-out;
 body{ 
 background: #fff url('../img/bg1.gif') 0px -350px;
 font-family: 'GothamBook';
+	-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+
  }
+
+body.rotate.home{
+	   -moz-transform:rotate(-1deg);
+	-webkit-transform:rotate(-1deg);
+	     -o-transform:rotate(-1deg);
+	    -ms-transform:rotate(-1deg);
+					transform:rotate(-1deg);
+
+}
+body.rotate.portfolio, body.rotate.contact{
+	   -moz-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	     -o-transform:rotate(0deg);
+	    -ms-transform:rotate(0deg);
+					transform:rotate(0deg);
+}
+body.rotate.services{
+	   -moz-transform:rotate(1deg);
+	-webkit-transform:rotate(1deg);
+	     -o-transform:rotate(1deg);
+	    -ms-transform:rotate(1deg);
+					transform:rotate(1deg);
+}
+body.rotate.equipe{
+	   -moz-transform:rotate(-2deg);
+	-webkit-transform:rotate(-2deg);
+	     -o-transform:rotate(-2deg);
+	    -ms-transform:rotate(-2deg);
+					transform:rotate(-2deg);
+}
 
 small{ font-family: arial, verdana, helvetica; }
 
@@ -60,7 +96,7 @@ nav a:active{ color:#bed600; }
 
 /*  HOME  */
 
-.home p{ width:450px;}
+section.home p{ width:450px;}
 
 .graph_home{position:absolute; margin-left:40px; margin-top:30px;}
 .bcircle{ 
@@ -173,7 +209,7 @@ p.alt{ color:#808285; }
 }
 
 
-.service p{ width:400px;}
+section.service p{ width:400px;}
 
 /* PORTFOLIO */
 
@@ -188,9 +224,9 @@ ul.pf li img:hover{opacity:1;}
 p.half_width{ width:45%; margin-left:50px;}
 
 
-.portfolio nav{ position:relative; margin-top:20px;}
+section.portfolio nav{ position:relative; margin-top:20px;}
 
-.portfolio nav a {
+section.portfolio nav a {
 	position:absolute;
 	top:0px;
 	width: 85px; height: 53px;
@@ -211,10 +247,10 @@ p.half_width{ width:45%; margin-left:50px;}
 	transition: all 0.2s ease-in-out;
 	
 }
-.portfolio nav a.design{left:70px;z-index:1; background:#bbb;}
-.portfolio nav a.web{left:140px; background:#555; }
-.portfolio nav a.active{ background:#bed600; z-index:3; opacity:0.9; }
-.portfolio nav a:hover{ opacity:1; z-index:2; background:#444; cursor:pointer; }
+section.portfolio nav a.design{left:70px;z-index:1; background:#bbb;}
+section.portfolio nav a.web{left:140px; background:#555; }
+section.portfolio nav a.active{ background:#bed600; z-index:3; opacity:0.9; }
+section.portfolio nav a:hover{ opacity:1; z-index:2; background:#444; cursor:pointer; }
 
 
 
@@ -222,9 +258,9 @@ p.half_width{ width:45%; margin-left:50px;}
 /* EQUIPE
 ------------------------------ */
 
-.equipe .box{ background:#aaa; border-radius:15px; padding:40px; color:#fff; height:500px; margin-bottom:30px; position:relative; }
+section.equipe .box{ background:#aaa; border-radius:15px; padding:40px; color:#fff; height:500px; margin-bottom:30px; position:relative; }
 
-.equipe .box .bio { 
+section.equipe .box .bio { 
 	opacity:0; 
 	margin-left:-50px;
 	position:absolute;
@@ -243,11 +279,11 @@ transition: all 0.6s ease-in-out;}
 .equipe .box .bio h5 em{ display:block; font-style:normal; font-weight:normal; }
 .equipe .box .bio p{ color:#fff; font-size:13px; }
 
-.equipe nav{ margin-top:50px; width:350px;}
-.equipe nav a { width:100px; height:100px; float:left; margin:3px;}
-.equipe nav a img{ width:100px; height:100px;  border-radius:8px; border:solid 1px #ccc; opacity:1;  }
-.equipe nav a img:hover{ opacity:0.8;}
-.equipe nav a.active img{ opacity:0.5;}
+section.equipe nav{ margin-top:50px; width:350px;}
+section.equipe nav a { width:100px; height:100px; float:left; margin:3px;}
+section.equipe nav a img{ width:100px; height:100px;  border-radius:8px; border:solid 1px #ccc; opacity:1;  }
+section.equipe nav a img:hover{ opacity:0.8;}
+section.equipe nav a.active img{ opacity:0.5;}
 
 
 
