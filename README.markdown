@@ -9,15 +9,12 @@ links
 TODO
 ------
 
-- h1 float glitch during transitions...
 
 - Use Jquery analytics Plugin instead of the regular code snip...
 
 - Figure out DIN stuff...
 
 - Position css dot on active section in header nav
-
-
 
 - translate google map texts.
 
@@ -29,7 +26,8 @@ TODO
 
 - Portfolio JSON (validator)
 
-- left-margin of services, team and contact sections!
+- h1 float glitch during transitions- happen just when going to PF page...
+
 
 
 
