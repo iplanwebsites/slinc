@@ -30,7 +30,7 @@ TODO
 On Launch
 ------
 
-- Activate Analytics
+- Activate Analytics, check if it tracks all pages ok (using sammy).
 - comment-out unused font from CSS...
 - FR only for launch - comment out LANG link...
 - remove unused font Files (reduce waiting time)
