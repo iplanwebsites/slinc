@@ -110,10 +110,10 @@ body.en fr, body.fr en{ background:#f00; /* TODO DISPLAY NONE ONCE STABLE*/}
 	 padding: 0 20px;
 	padding-top:10px;
 	}
-header.wrapper{margin-top:0px; padding:0px; padding: 0 20px; padding-top:5px; height:70px; margin:0 auto;  }
+header.wrapper{margin-top:0px; padding:0px; padding: 0 20px; padding-top:5px; height:80px; margin:0 auto;  }
 
 
-img.logo{ width:100px; padding-right:70px; float:left; margin-top:-20px; opacity:1; }
+img.logo{ width:117px; padding-right:70px; float:left; margin-top:-20px; opacity:1; }
 img.logo:hover{ opacity:0.8; }
 
 nav a{ color:#bcbec0; text-decoration:none; margin-left:1em; text-transform:uppercase;

@@ -25,11 +25,7 @@ TODO
 
 - Add -moz-webkit prefix in CSS! opacity, border-radius, transform, transition...
 
-- PF arrow icon change (dotted arrows) previous is also cut...
 
-- Le logo Slinc en haut à gauche devrait être 25% +grand
-
-- spinning whell in PF: Green-slinc
 
 
 On Launch

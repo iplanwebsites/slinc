@@ -14,7 +14,7 @@
 	width: 30px;
 	height: 30px;
 	text-indent: -999999px;
-	background: url(gray_next.png) no-repeat 0 -30px;
+	background: url(slinc_next.png) no-repeat 0 -30px;
 }
 
 /*previous button*/
@@ -26,7 +26,7 @@
 	width: 30px;
 	height: 30px;
 	text-indent: -999999px;
-	background: url(gray_prev.png) no-repeat 0 -30px;
+	background: url(slinc_prev.png) no-repeat 0 -30px;
 }
 
 /*pager links*/
