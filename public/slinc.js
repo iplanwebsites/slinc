@@ -8,6 +8,13 @@ if(window.location.hostname == 'www.slincom.ca'){
 	window.location = "http://slincom.ca/page2.php";
 }
 
+//fadeIn animation
+
+$('#cache').addClass('invisible').delay(1200).queue(function(next){
+	$('#cache').remove(); //we remove the DOM node once anim is over...
+	next();
+});
+
 
 	function getObjects(obj, key, val) {
 	    var objects = [];
