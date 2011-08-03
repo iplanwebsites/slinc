@@ -23,11 +23,12 @@ TODO
 
 - translate google map texts.
 
-- big white fader on load.
-
 - Load JS at the bottom of the page
 
 - Add -moz-webkit prefix in CSS! opacity, border-radius, transform, transition...
+
+- weird blue shadow highlight on PF images.
+
 
 
 On Launch

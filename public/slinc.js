@@ -91,7 +91,15 @@ function loadPortfolio(context, cat){
 									   moveSlideQty: 1             
 				}).removeClass('hide');// eo bx init
 			 // theShow.destroyShow();
-			$('.lightboxlink').colorbox();
+			$('.lightboxlink').colorbox({
+				returnFocus: false, 
+				current: function(){
+				if(lang == "fr"){
+				return "image {current} de {total}";
+				}else{
+					return "image {current} of {total}";
+				}
+			}});
 			
 			/*
 			$('ul.pf li img').click( function(){
