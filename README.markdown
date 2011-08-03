@@ -9,6 +9,9 @@ links
 TODO
 ------
 
+- alignement of PF PAGE
+
+- some Bios are too long, tweak font-size..
 
 - Use Jquery analytics Plugin instead of the regular code snip...
 
@@ -29,6 +32,7 @@ TODO
 - add FR TEXTS
 
 - Fix service graph
+
 
 
 On Launch
