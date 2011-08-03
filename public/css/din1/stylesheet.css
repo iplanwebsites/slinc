@@ -2,6 +2,26 @@
 
 
 
+
+
+/* DIN BLACK WEB*/
+/* first for IE 4–8 */
+@font-face {
+  font-family: 'din black';
+  src: url("DINWeb-Black.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: 'din black';
+  src: url("DINWeb-Black.woff") format("woff");
+}
+
+
+
+
+/* GOOD old DIN def. */
+
 @font-face {
     font-family: 'din bold';
     src: url('dinmittelschriftstd-webfont.eot');
@@ -13,6 +33,9 @@
     font-style: normal;
 
 }
+
+
+
 
 @font-face { /* gr condensed*/
     font-family: 'din bold cond';
