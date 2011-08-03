@@ -119,7 +119,7 @@ nav a:active{ color:#bed600; }
 
 /*active states in header nav */
 body.home header nav a.home{color:#bed600;}
-body.services header nav a.services{color:#bed600;}
+body.service header nav a.services{color:#bed600;}
 body.portfolio header nav a.portfolio{color:#bed600;}
 body.equipe header nav a.equipe{color:#bed600;}
 body.contact header nav a.contact{color:#bed600; text-decoration:underline;}

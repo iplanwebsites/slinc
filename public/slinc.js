@@ -125,7 +125,7 @@ function loadBio(context, cat){
 	
 function loadSection(context, cat){
 		//we set body class
-		$('body').removeClass('home portfolio services contact equipe');
+		$('body').removeClass('home portfolio service contact equipe');
 		$('body').addClass(cat);
 	
 		//we trigger page transition

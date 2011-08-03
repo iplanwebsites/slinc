@@ -8,7 +8,7 @@ links
 TODO
 ------
 
-- h1 float glitch during transitions...
+*- h1 float glitch during transitions...
 
 - Use Jquery analytics Plugin instead of the regular code snip...
 
@@ -17,6 +17,10 @@ TODO
 - Position css dot on active section in header nav
 
 - Setup template Cache in Sammy.
+
+- translate portfolio lightbox labels in FR (image 1 of 3).
+
+- translate google map texts.
 
 
 On Launch
