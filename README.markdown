@@ -18,13 +18,9 @@ TODO
 
 - translate google map texts.
 
-- Load JS at the bottom of the page
-
 - Add -moz-webkit prefix in CSS! opacity, border-radius, transform, transition...
 
 - clean up CSS (format)
-
-- Portfolio JSON (validator)
 
 - h1 float glitch during transitions- happen just when going to PF page...
 
