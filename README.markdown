@@ -26,7 +26,9 @@ TODO
 
 - h1 float glitch during transitions- happen just when going to PF page...
 
+- add FR TEXTS
 
+- Fix service graph
 
 
 On Launch
