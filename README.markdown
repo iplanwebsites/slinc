@@ -17,7 +17,7 @@ TODO
 
 - Position css dot on active section in header nav
 
-- Setup template Cache in Sammy.
+
 
 - translate google map texts.
 
@@ -25,6 +25,11 @@ TODO
 
 - Add -moz-webkit prefix in CSS! opacity, border-radius, transform, transition...
 
+- clean up CSS (format)
+
+- Portfolio JSON (validator)
+
+- left-margin of services, team and contact sections!
 
 
 
@@ -33,13 +38,12 @@ On Launch
 
 - Activate Analytics
 - comment-out unused font from CSS...
-- FR only for launch - comment ou LANG link...
+- FR only for launch - comment out LANG link...
 - remove unused font Files (reduce waiting time)
 - remove redirection script and modify old site.
 - clean up JS (format + comments)
-- clean up CSS (format)
-- Portfolio JSON (validator)
-- 
+
+- Setup template Cache in Sammy (only once stable)
 
 
 
