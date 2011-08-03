@@ -19,16 +19,17 @@ TODO
 
 - Setup template Cache in Sammy.
 
-- translate portfolio lightbox labels in FR (image 1 of 3).
-
 - translate google map texts.
 
 - Load JS at the bottom of the page
 
 - Add -moz-webkit prefix in CSS! opacity, border-radius, transform, transition...
 
-- weird blue shadow highlight on PF images.
+- PF arrow icon change (dotted arrows) previous is also cut...
 
+- Le logo Slinc en haut à gauche devrait être 25% +grand
+
+- spinning whell in PF: Green-slinc
 
 
 On Launch
