@@ -9,37 +9,18 @@ links
 TODO
 ------
 
-- alignement of PF PAGE
-
-- some Bios are too long, tweak font-size..
-
 - Use Jquery analytics Plugin instead of the regular code snip...
-
-- Figure out DIN stuff...
 
 - Position css dot on active section in header nav
 
-- translate google map texts.
-
-- Add -moz-webkit prefix in CSS! opacity, border-radius, transform, transition...
-
-- Specefy fallback fonts (arial)
-
-- clean up CSS (format)
 
 - h1 float glitch during transitions- happen just when going to PF page...
-
-- add FR TEXTS
-
-- Fix service graph
 
 
 
 On Launch
 ------
 
-- Activate Analytics, check if it tracks all pages ok (using sammy).
-- comment-out unused font from CSS...
 - FR only for launch - comment out LANG link...
 - remove unused font Files (reduce waiting time)
 - remove redirection script and modify old site.
@@ -47,7 +28,7 @@ On Launch
 
 - Setup template Cache in Sammy (only once stable)
 
-
+- possibly replace no-borderRadius with static images instead of the anim...
 
 TEXTS
 -----------
