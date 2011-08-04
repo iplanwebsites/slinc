@@ -36,8 +36,8 @@
 
 
 
-
-@font-face { /* gr condensed*/
+/*
+@font-face { 
     font-family: 'din bold cond';
     src: url('dinengschriftstd-webfont.eot');
     src: url('dinengschriftstd-webfont.eot?#iefix') format('embedded-opentype'),
@@ -72,4 +72,4 @@
     font-style: normal;
 
 }
-
+*/

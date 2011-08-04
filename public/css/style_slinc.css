@@ -44,7 +44,7 @@ transition: all 0.2s ease-in-out;
 body.service #sections{ height:520px;}
 body.equipe #sections{ height:670px;}
 body.portfolio #sections{ height:500px;}
-body.contact #sections{ height:500px;}
+body.contact #sections{ height:450px;}
 		
 section {
     -webkit-transition: all 0.2s ease-in-out;
@@ -722,7 +722,7 @@ section.equipe nav a.active img {
 
 /* CONTACT
 ------------------------------ */
-.contact small p {
+section.contact small p {
     font-size: 14px;
     width: 350px
     }
