@@ -11,6 +11,8 @@ SLINC GREEN: #bed600
 transition: all 0.2s ease-in-out;
 
 */
+
+body{height:100%; min-height:100%;}
 #cache {
     background: #fff;
     -webkit-transition: all 1.2s ease-in-out;
@@ -168,7 +170,7 @@ body.en fr, body.fr en {
     padding: 0 20px;
     padding-top: 10px
     }
-div.wrapper { padding:0px; width:1000px;}
+div.wrapper { padding:0px; width:1000px; margin-bottom:85px;}
 section{padding:10px;}
 section.service, section.equipe, section.contact{ padding-left:44px; padding-right:20px;}
 header.wrapper {
@@ -755,7 +757,9 @@ footer {
     width: 100%;
     padding: 0;
     color: #fff;
-    clear: both
+    clear: both;
+		position:fixed;
+		bottom:0;
     }
 
 footer p {
