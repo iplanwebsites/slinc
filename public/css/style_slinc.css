@@ -400,9 +400,14 @@ p.alt {
 .r_col {
     width: 50%;
     float: right;
-		margin-top:20px;
+		margin-top:0px;
     }
-
+section.service .r_col, section.equipe .r_col, section.contact .r_col {
+		    width: 50%;
+		    float: right;
+				margin-top:20px;
+}
+		
 /* service
 -------------------- */
 .service_graph {
