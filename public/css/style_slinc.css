@@ -32,9 +32,20 @@ transition: all 0.2s ease-in-out;
 #sections {
     position: relative;
     height: 600px;
-    overflow: hidden
+    overflow: hidden;
+		-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out
     }
 
+
+/* different section height... */
+body.service #sections{ height:520px;}
+body.equipe #sections{ height:670px;}
+body.portfolio #sections{ height:500px;}
+body.contact #sections{ height:500px;}
+		
 section {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -85,7 +96,7 @@ section.home p {
 
 body {
     background: #fff url(../img/bg1.gif) 0 -350px;
-    font-family: "din bold";
+    font-family: "din bold", Arial, Verdana;
     /*
     	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -123,12 +134,15 @@ body.rotate.equipe {
     transform: rotate(-1deg)
     }
 
+
+
+
 small {
     font-family: arial, verdana, helvetica
     }
 
 h1, h2, h3, h4, h5, h6, h7 {
-    font-family: "din black"
+    font-family: "din black", Arial, Verdana
     }
 
 a:hover {
@@ -205,7 +219,7 @@ nav a:active {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 45px;
-    font-family: "din black"
+    font-family: "din black", Arial, Verdana
     }
 
 #nav_main a {
@@ -217,7 +231,7 @@ nav a:active {
     font-size: 14px;
     margin-right: 50px;
     margin-top: 25px;
-    font-family: "din black"
+    font-family: "din black", Arial, Verdana
     }
 
 #nav_secondary a.contact {
@@ -291,14 +305,14 @@ body.contact header nav a.contact {
 
 .bcircle strong {
     font-size: 50px;
-    font-family: "din black";
+    font-family: "din black", Arial, Verdana;
     letter-spacing: -3px;
     line-height: 1em
     }
 
 .bcircle em {
     font-size: 16px;
-    font-family: "din black";
+    font-family: "din black", Arial, Verdana;
     padding-top: 30px;
     display: block;
     font-style: normal
@@ -400,7 +414,7 @@ p.alt {
     margin-bottom: 20px;
     text-align: center;
     position: relative;
-    font-family: "din bold"
+    font-family: "din bold", Arial, Verdana
     }
 
 .service_graph h3 {
@@ -426,7 +440,7 @@ p.alt {
     margin-top: -65px;
     font-size: 20px;
     text-transform: uppercase;
-    font-family: "din bold";
+    font-family: "din bold", Arial, Verdana;
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
@@ -482,10 +496,26 @@ section.service p {
     }
 
 /* PORTFOLIO */
-#pf_wrap {
-    padding-left: 49px
-    }
 
+body.portfolio div.wrapper{
+	padding-left:0; width:980px; 
+
+}
+body div.wrapper{
+	-webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out
+}
+#pf_wrap {
+    padding-left: 49px;
+		padding-left: 48px;
+		margin-left:0px;
+		
+}
+
+#pf_wrap .bx-prev{ margin-left:10px}
+#pf_wrap .bx-next{ margin-right:20px}
 ul.pf {
     padding: 0;
     margin: 0;
@@ -496,7 +526,7 @@ ul.pf {
 ul.pf li {
     padding: 0;
     margin: 0;
-    width: 215px
+    width: 225px; /* this is where padding happen... was 215*/
     }
 
 ul.pf li img {
@@ -530,7 +560,9 @@ p.half_width {
 
 section.portfolio nav {
     position: relative;
-    margin-top: 20px
+    margin-top: 20px;
+		margin-left:30px;
+		
     }
 
 section.portfolio nav a {
@@ -549,7 +581,7 @@ section.portfolio nav a {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
     opacity: 0.8;
-    font-family: "din black";
+    font-family: "din black", Arial, Verdana;
     font-size: 14px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -594,7 +626,7 @@ section.equipe .box {
     border-radius: 15px;
     padding: 40px;
     color: #fff;
-    height: 450px;
+    height: 530px;
     margin-bottom: 30px;
     position: relative
     }
@@ -614,7 +646,7 @@ section.equipe .box .bio {
     }
 
 section.equipe .box .bio p {
-    font-family: "din bold"
+    font-family: "din bold", Arial, Verdana
     }
 
 .equipe .box .bio.active {
