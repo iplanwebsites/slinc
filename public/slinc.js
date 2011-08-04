@@ -234,7 +234,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 		// --------------------------------------------
 	
 		this.get('/#!/:lang/equipe', function (context) {// LOAD ROUTE (homepage)
-			context.redirect('/#!/'+this.params['lang']+'/equipe/francis');
+			context.redirect('/#!/'+this.params['lang']+'/equipe/marc');
 		});
 		
 		this.get('/#!/:lang/equipe/:sub', function (context) {// LOAD ROUTE (homepage)
