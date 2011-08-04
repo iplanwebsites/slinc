@@ -168,7 +168,9 @@ body.en fr, body.fr en {
     padding: 0 20px;
     padding-top: 10px
     }
-
+div.wrapper { padding:0px; width:1000px;}
+section{padding:10px;}
+section.service, section.equipe, section.contact{ padding-left:44px; padding-right:20px;}
 header.wrapper {
     margin-top: 0;
     padding: 0;
@@ -397,7 +399,8 @@ p.alt {
 
 .r_col {
     width: 50%;
-    float: right
+    float: right;
+		margin-top:20px;
     }
 
 /* service
@@ -499,17 +502,19 @@ section.service p {
     }
 
 /* PORTFOLIO */
-
+/*
 body.portfolio div.wrapper{
 	padding-left:0; width:980px; 
 
-}
+}*/
 body div.wrapper{
 	-webkit-transition: all 0.6s ease-in-out;
 -moz-transition: all 0.6s ease-in-out;
 -o-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out
 }
+
+
 #pf_wrap {
     padding-left: 49px;
 		padding-left: 48px;
