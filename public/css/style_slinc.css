@@ -12,7 +12,10 @@ transition: all 0.2s ease-in-out;
 
 */
 
+
 body{height:100%; min-height:100%;}
+html.js #seo{ display:none;}
+
 #cache {
     background: #fff;
     -webkit-transition: all 1.2s ease-in-out;

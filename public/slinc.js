@@ -9,6 +9,7 @@ if(window.location.hostname == 'www.slincom.ca'){
 }
 
 //fadeIn animation
+$('#seo').remove();
 
 $('#cache').addClass('invisible').delay(1200).queue(function(next){
 	$('#cache').remove(); //we remove the DOM node once anim is over...
