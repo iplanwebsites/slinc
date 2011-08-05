@@ -287,6 +287,7 @@ body.contact header nav a.contact {
     padding-top: 90px;
     -webkit-border-radius: 440px;
     -moz-border-radius: 440px;
+behavior: url(border-radius.htc);
     border-radius: 440px;
     top: 20px;
     position: absolute;
@@ -417,6 +418,7 @@ section.service .r_col, section.equipe .r_col, section.contact .r_col {
     height: 390px;
     -webkit-border-radius: 400px;
     -moz-border-radius: 400px;
+behavior: url(border-radius.htc);
     border-radius: 400px;
     background: #bed600;
     color: #fff;
@@ -443,6 +445,7 @@ section.service .r_col, section.equipe .r_col, section.contact .r_col {
     background: rgba(68, 75, 10, 0.2);
     -webkit-border-radius: 360px;
     -moz-border-radius: 360px;
+behavior: url(border-radius.htc);
     border-radius: 360px;
     text-align: center;
     position: absolute;
@@ -550,6 +553,7 @@ ul.pf li img {
     margin: 0;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
+behavior: url(border-radius.htc);
     border-radius: 20px;
     background: #ccc;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
@@ -588,6 +592,7 @@ section.portfolio nav a {
     padding-top: 32px;
     -webkit-border-radius: 360px;
     -moz-border-radius: 360px;
+behavior: url(border-radius.htc);
     border-radius: 360px;
     text-align: center;
     background: #999;
@@ -638,6 +643,7 @@ section.equipe .box {
     background: #aaa;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
+behavior: url(border-radius.htc);
     border-radius: 15px;
     padding: 40px;
     color: #fff;
@@ -708,6 +714,7 @@ section.equipe nav a img {
     height: 100px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
+behavior: url(border-radius.htc);
     border-radius: 8px;
     border: solid 1px #ccc;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
