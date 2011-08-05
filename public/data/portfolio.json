@@ -109,7 +109,7 @@
     },
     {
         "id": "tafisa",
-        "nbImg": "2",
+        "nbImg": "3",
         "cat": "pub",
         "title_en": "333",
         "title_fr": "Nom du projet",
@@ -118,7 +118,7 @@
     }		,
 		    {
 		        "id": "uni_training",
-		        "nbImg": "1",
+		        "nbImg": "3",
 		        "cat": "pub",
 		        "title_en": "333",
 		        "title_fr": "Nom du projet",
