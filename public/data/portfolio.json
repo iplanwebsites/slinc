@@ -1,161 +1,284 @@
+{
+		                "caption": "",
+		                "desc": ""
+		            }
+
+
 [
     {
         "id": "jm",
         "nbImg": "5",
         "cat": "design",
-        "title_en": "English Name",
+        "title_en": "EnglishName",
         "title_fr": "JM + JW",
         "desc_en": "This is the english description",
         "desc_fr": "Développement complet de l’image de marque JM + JW",
         "images": [
             {
                 "caption": "",
-                "desc": ""
-            }
+                "desc": "JM a confié la refonte de son image à SLINC. Le défi était de moderniser la marque JM et créer la marque de vêtements pour femmes tout en gardant un lien de parenté. Ainsi, partant de JM (men’s wear) est né JW (women’s wear)."
+            }		,		
+								{
+				                "caption": "Étiquettes",
+				                "desc": "Développement complet de l’image de marque JM + JW"
+				            }		,		
+												{
+								                "caption": "Étiquettes",
+								                "desc": "Développement complet de la famille des vêtements pour homme JM"
+								            }		,		
+																{
+												                "caption": "Emballages",
+												                "desc": "Développement complet de l’image de marque"
+												            }		,		
+																				{
+																                "caption": "Emballages",
+																                "desc": "Développement complet de l’image de marque"
+																            }
         ]
     },
     {
         "id": "fronttears",
         "nbImg": "1",
         "cat": "design",
-        "title_en": "English Name",
-        "title_fr": "Nom du projet",
+        "title_en": "Fronttears",
+        "title_fr": "Fronttears",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images":[{
+						                "caption": "Identité et emballage",
+						                "desc": "Un nouveau produit sur le marché, le bandeau anti-sueur pour sportifs et gens actifs. SLINC a conçu l’image, l’emballage et a même participé au design du produit."
+						            }]
     },
     {
         "id": "apcm",
         "nbImg": "1",
         "cat": "design",
-        "title_en": "English Name",
+        "title_en": "APCM",
         "title_fr": "APCM",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images":[{
+						                "caption": "Identité",
+						                "desc": "Conception du logo de l’APCM qui remplace le PCM"
+						            }]
     },
     {
         "id": "magasin_general",
         "nbImg": "1",
         "cat": "design",
-        "title_en": "English 11",
-        "title_fr": "Nom du projet",
+        "title_en": "Magasin Général du Vieux-Montréal",
+        "title_fr": "Magasin Général du Vieux-Montréal",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images":[{
+						                "caption": "Identité",
+						                "desc": "Développement de l’Identité et des objets promotionnels d’une boutique dans le Vieux-Montréal. Le Magasin Général reprend le bon vieux concept du magasin ou l’on trouve de tout, dans un look où se marient le vieux et le moderne."
+						            }]
     },
     {
         "id": "delices",
         "nbImg": "3",
         "cat": "design",
-        "title_en": "English Name",
-        "title_fr": "Nom du projet",
+        "title_en": "Délices d’autrefois",
+        "title_fr": "Délices d’autrefois",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "Identité + Emballages",
+						                "desc": "Conception de l’image d’entreprise et de la gamme de sauces brassées selon la bonne méthode d’antan : à la main"
+						            },
+												{
+														                "caption": "Emballages",
+														                "desc": "La gamme de marinades cuisinées selon la bonne méthode d’antan : à la main"
+														            },
+																				{
+																						                "caption": "Emballages",
+																						                "desc": "La gamme de ketchups cuisinés selon la bonne méthode d’antan : à la main"
+																						            }]
     },
     {
         "id": "delcraft",
         "nbImg": "1",
         "cat": "design",
-        "title_en": "English Name",
-        "title_fr": "Nom du projet",
+        "title_en": "Delcraft",
+        "title_fr": "Delcraft",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "Identité + photographie",
+						                "desc": "Conception de l’image, outils de communication et prise de photos sur place des cuisines Delcraft un fabricant de cuisines sur mesure"
+						            }]
     },
     {
         "id": "morris_mckenzie",
         "nbImg": "1",
         "cat": "design",
-        "title_en": "English 222",
-        "title_fr": "Nom du projet",
+        "title_en": "Morris McKenzie",
+        "title_fr": "Morris McKenzie ",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "Dépliant",
+						                "desc": ""
+						            }]
     },
+
+
+
+
+
+
+
+
+
+
     {
         "id": "uni_training",
         "nbImg": "3",
         "cat": "pub",
-        "title_en": "333",
-        "title_fr": "Nom du projet",
+        "title_en": "UNI Training",
+        "title_fr": "UNI Training",
         "desc_en": "This is the english description",
         "desc_fr": "This is my FRENCH description, it can be long..."
+				"images": [{
+						                "caption": "Affichage intérieur",
+						                "desc": "La conception et la photographie de cette série d’affiches a entièrement été réalisée par SLINC. Un choix d’éclairage contrasté découpe la silhouette et crée un visuel percutant."
+						            },		{
+																                "caption": "Affichage intérieur",
+																                "desc": "La conception et la photographie de cette série d’affiches a entièrement été réalisée par SLINC. Un choix d’éclairage contrasté découpe la silhouette et crée un visuel percutant."
+																            },		{
+																										                "caption": "Affichage intérieur",
+																										                "desc": "La conception et la photographie de cette série d’affiches a entièrement été réalisée par SLINC. Un choix d’éclairage contrasté découpe la silhouette et crée un visuel percutant."
+																										            }]
     },
     {
         "id": "tafisa",
         "nbImg": "3",
         "cat": "pub",
-        "title_en": "333",
-        "title_fr": "Nom du projet",
+        "title_en": "Tafisa",
+        "title_fr": "Tafisa",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "Campagne imprimée",
+						                "desc": "Un fabricant de mélamine affiche ses produits aux noms exotiques en utilisant des visuels évocateurs"
+						            },
+												{
+														                "caption": "Campagne imprimée",
+														                "desc": ""
+														            },
+																				{
+																						                "caption": "Publipostage",
+																						                "desc": "Envoi postal annonçant la nouvelle gamme de fini mélamine TUXEDO"
+																						            }
+														]
     },
     {
         "id": "players",
         "nbImg": "1",
         "cat": "pub",
-        "title_en": "333",
-        "title_fr": "Nom du projet",
+        "title_en": "Équipe de course Players",
+        "title_fr": "Équipe de course Players",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "",
+						                "desc": "Campagne publicitaire «Les fous de la course»"
+						            }]
     },
     {
         "id": "petites_passions",
         "nbImg": "2",
         "cat": "pub",
-        "title_en": "English 222bb",
-        "title_fr": "Nom du projet",
+        "title_en": "Chocolaterie Les petites Passions ",
+        "title_fr": "Chocolaterie Les petites Passions ",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "Campagne imprimée",
+						                "desc": "Un chocolatier-artisan de père en fille, un visuel accrocheur qui dévoile un produit de qualité."
+						            },		{
+																                "caption": "Campagne imprimée",
+																                "desc": "Les différentes versions : générique, Noël, St-Valentin."
+																            }]
+    },
+		{
+        "id": "rio",
+        "nbImg": "1",
+        "cat": "design",
+        "title_en": "Régie des installation Olympiques",
+        "title_fr": "Régie des installation Olympiques",
+        "desc_en": "This is the english description",
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "Panneau d’affichage",
+						                "desc": "Publicité pour le centre de conditionnement du Parc Oympique."
+						            }]
     },
     {
         "id": "st_hubert",
         "nbImg": "1",
         "cat": "pub",
-        "title_en": "333",
-        "title_fr": "Nom du projet",
+        "title_en": "Rôtisseries St-Hubert",
+        "title_fr": "Rôtisseries St-Hubert",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "encart de menu et napperons de table en rôtisserie",
+						                "desc": ""
+						            }]
     },
     {
         "id": "labatt",
         "nbImg": "1",
         "cat": "pub",
-        "title_en": "English Name",
+        "title_en": "Bleue Dry ",
         "title_fr": "Bleue Dry",
         "desc_en": "This is the english description",
-        "desc_fr": "Campagne d’affichage dans les bars pour la Zone Bleue Dry"
+        "desc_fr": "Campagne d’affichage dans les bars pour la Zone Bleue Dry",
+				"images": [{
+						                "caption": "Campagne imprimée",
+						                "desc": "Campagne d’affichage dans les bars pour la Zone Bleue Dry"
+						            }]
     },
-    {
-        "id": "rio",
-        "nbImg": "1",
-        "cat": "design",
-        "title_en": "333",
-        "title_fr": "Nom du projet",
-        "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
-    },
+    
     {
         "id": "jm_web",
         "nbImg": "1",
         "cat": "web",
-        "title_en": "333",
-        "title_fr": "Nom du projet",
+        "title_en": "JM",
+        "title_fr": "JM",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "Site web transactionnel",
+						                "desc": "Conception et réalisation d’un site transactionnel de vêtements pour hommes et femmes"
+						            }]
     },
     {
         "id": "jm_email",
         "nbImg": "1",
         "cat": "web",
         "title_en": "333",
-        "title_fr": "Nom du projet",
+        "title_fr": "NomPPprojet",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "Courriel de lancement",
+						                "desc": "Courriel de lancement du site transactionnel JM. Cet envoi a généré un résultat significatif en terme de ventes"
+						            }]
     },
     {
         "id": "jm_adwords",
         "nbImg": "1",
         "cat": "web",
         "title_en": "333",
-        "title_fr": "Nom du projet",
+        "title_fr": "NomPPprojet",
         "desc_en": "This is the english description",
-        "desc_fr": "This is my FRENCH description, it can be long..."
+        "desc_fr": "This is my FRENCH description, it can be long...",
+				"images": [{
+						                "caption": "Campagne internet adwords",
+						                "desc": "Campagne adwords de Google visant à augmenter le traffic et les ventes sur le site transactionnel de JM"
+						            }]
     }
 ]
