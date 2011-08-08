@@ -9,3 +9,9 @@ get '/' do
 	# redirect '/clock.html'
 	erb :index
 end
+
+get '/page2.php' do
+	 redirect '/'
+	# For old site redirection...
+end
+

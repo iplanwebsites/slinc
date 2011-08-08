@@ -1,0 +1,21 @@
+                            
+/* TEAM */
+         
+Designer: Slincom.ca
+
+Coder: I Plan Websites
+iplanwebsites.com: http://iplanwebsites.com/                                     
+Twitter: @felix_m                 
+Location: Montreal, Canada.
+                                                [...]
+						
+
+/* SITE */
+                      
+Last update: 2011
+                      
+Standards: HTML5, CSS3,..
+                      
+Components: jQuery, Sammy, Ruby, Sinatra, Heroku, etc.
+                      
+Software: TextMate, Good old trusty Terminal

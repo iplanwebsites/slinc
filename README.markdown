@@ -1,23 +1,38 @@
-== links ==
+links
+-----
 
-* http://slinc.heroku.com/
-* http://slincom.ca/
+- http://slinc.iplanwebsites.com/
+
+- http://slincom.ca/
 
 
-==TODO==
+TODO
+------
 
-* upload font files to Squirrel
-* Slice images
-* CSS of header + rollovers
-* Sectoins Styles
-* Lightbox script...
-* catch erronous routes, and redirect them to home or corrected ones...
+- Use Jquery analytics Plugin instead of the regular code snip...
 
-* create the circles with alpha
-* FR only for launch - comment ou LANG link...
-* Bios routing (like PF)
-* Contact page template.
-* choppy CSS scaling...
+- Position css dot on active section in header nav
+
+- BUG: last item of first portfolio scroller, double up the nb of images...
+
+- h1 float glitch during transitions- happen just when going to PF page...
+
+
+
+On Launch
+------
+
+- FR only for launch - comment out LANG link...
+
+- remove redirection script and modify old site.
+
+- clean up JS (format + comments)
+
+- Setup template Cache in Sammy (only once stable)
+
+- possibly replace no-borderRadius with static images instead of the anim...
+
+
 
 
 
