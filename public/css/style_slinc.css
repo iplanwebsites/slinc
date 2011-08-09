@@ -642,8 +642,22 @@ section.portfolio nav a:hover {
     cursor: pointer
     }
 
+
 /* lightbox */
-#cboxTitle { text-align:left; margin-left:150px; margin-right:50px;}
+#cboxTitle strong{ padding-right:10px;}
+#cboxTitle { 
+	text-align:left; margin-left:150px; 
+	margin-right:250px;
+	display:block;
+	margin-bottom:-5px;
+	width:70%;
+	height:50px;
+	vertical-align:bottom;
+	}
+ #cboxLoadedContent{margin-bottom:57px;}
+
+#cboxCurrent, #cboxNext, #cboxPrevious{ margin-bottom:28px;}
+
 
 
 /* EQUIPE
