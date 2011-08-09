@@ -94,6 +94,7 @@ function loadPortfolio(context, cat){
 			 // theShow.destroyShow();
 			$('.lightboxlink').colorbox({
 				returnFocus: false, 
+				maxHeight: "100%",
 				current: function(){
 				if(lang == "fr"){
 				return "image {current} de {total}";
