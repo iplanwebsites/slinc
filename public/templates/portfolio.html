@@ -1,12 +1,12 @@
 <ul class="pf <%= cat %> hide">
 	<% for ( var i = 0; i < projects.length; i++ ) { %>
 <li>
-	<a href="portfolio/<%= projects[i].id %>/1.jpg" rel="box_<%=i%>"  title="<strong><%= projects[i].title_fr %> </strong> <%= projects[i].images[0].caption %><br><%= projects[i].images[0].desc %>" class="lightboxlink">
+	<a href="portfolio/<%= projects[i].id %>/1.jpg" rel="box_<%=i%>"  title="<strong><%= projects[i].title_fr %> <em>></em><%= projects[i].images[0].caption %>  </strong> <em>></em><%= projects[i].images[0].desc %>" class="lightboxlink">
 	<img src="portfolio/<%= projects[i].id %>/tb1.jpg" width="210" height="170" alt="<%= projects[i]['title_'+lang] %> (<%= projects[i].id %>)" data-id="<%= projects[i].id %>" />
 	</a>
 
 <% for ( var k = 2; k <= projects[i].nbImg; k++ ) { %>
-	<a href="portfolio/<%= projects[i].id %>/<%=k%>.jpg" rel="box_<%=i%>" title="<strong><%= projects[i].title_fr %> </strong> <%= projects[i].images[k-1].caption %><br><%= projects[i].images[k-1].desc %>"   class="lightboxlink not_displayed"> x </a>
+	<a href="portfolio/<%= projects[i].id %>/<%=k%>.jpg" rel="box_<%=i%>" title="<strong><%= projects[i].title_fr %><em>></em> <%= projects[i].images[k-1].caption %></strong><em>></em><%= projects[i].images[k-1].desc %>"   class="lightboxlink not_displayed"> x </a>
 	<% } %>
 	</li>
 <% } %>

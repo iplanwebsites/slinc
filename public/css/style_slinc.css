@@ -662,9 +662,18 @@ section.portfolio nav a:hover {
 
 
 /* lightbox */
-#cboxTitle strong{ padding-right:10px;}
+#cboxTitle strong{  
+	font-weight:normal; 
+	font-family: 'din black', arial, verdana;
+	}
+	#cboxTitle em{ color: #bed600;
+		font-family: 'din black', arial, verdana;
+		margin-left:5px; margin-right:5px;
+		} 
+		
 #cboxTitle { 
-	text-align:left; margin-left:150px; 
+	font-family: 'din reg', arial, verdana;
+	text-align:left; margin-left:10px; 
 	margin-right:250px;
 	display:block;
 	margin-bottom:-5px;
@@ -674,9 +683,15 @@ section.portfolio nav a:hover {
 	}
  #cboxLoadedContent{margin-bottom:57px;}
 
-#cboxCurrent, #cboxNext, #cboxPrevious{ margin-bottom:28px;}
+#cboxNext, #cboxPrevious{ margin-bottom:28px; background:#f00; right:20px; bottom:5px; display:none; margin-left:-1000px; }
 
-
+#cboxCurrent{ 
+	
+	right:35px; bottom:3px; 
+	
+	text-align:right;
+	font-size:16px;
+}
 
 /* EQUIPE
 ------------------------------ */
