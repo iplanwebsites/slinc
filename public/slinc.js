@@ -97,9 +97,9 @@ function loadPortfolio(context, cat){
 				maxHeight: "100%",
 				current: function(){
 				if(lang == "fr"){
-				return "image {current} de {total}";
+				return "{current} / {total}";
 				}else{
-					return "image {current} of {total}";
+					return "{current} / {total}";
 				}
 			}});
 			
