@@ -798,11 +798,20 @@ section.equipe nav a.active img {
 
 /* CONTACT
 ------------------------------ */
+section.contact .r_col{ width:60%; }
+
 section.contact small p {
     font-size: 14px;
     width: 350px
     }
-
+section.contact{ font-size:10px;}
+section.contact .persons span{
+	display:block;
+	line-height:1em;
+}
+section.contact span.green, section.contact span.green a, section.contact span.green a:hover{
+	color: #bed600;
+}
 .contact .infos {
     margin-top: 50px;
     font-size: 16px;
