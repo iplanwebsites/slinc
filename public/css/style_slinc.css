@@ -665,14 +665,18 @@ section.portfolio nav a:hover {
 #cboxTitle strong{  
 	font-weight:normal; 
 	font-family: 'din black', arial, verdana;
+	font-size:13px;
 	}
 	#cboxTitle em{ color: #bed600;
 		font-family: 'din black', arial, verdana;
+		
 		margin-left:5px; margin-right:5px;
+
 		} 
 		
 #cboxTitle { 
 	font-family: 'din reg', arial, verdana;
+	font-size:12px;
 	text-align:left; margin-left:10px; 
 	margin-right:250px;
 	display:block;
