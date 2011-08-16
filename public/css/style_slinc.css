@@ -611,8 +611,8 @@ section.portfolio nav a {
     position: absolute;
     top: 0;
     width: 85px;
-    height: 53px;
-    padding-top: 32px;
+    height: 50px;
+    padding-top: 35px;
     -webkit-border-radius: 360px;
     -moz-border-radius: 360px;
 behavior: url(border-radius.htc);
@@ -671,8 +671,7 @@ section.portfolio nav a:hover {
 		font-family: 'din black', arial, verdana;
 		
 		margin-left:5px; margin-right:5px;
-
-		} 
+} 
 		
 #cboxTitle { 
 	font-family: 'din reg', arial, verdana;
@@ -760,7 +759,7 @@ section.equipe .box .bio p {
 
 section.equipe nav {
     margin-top: 50px;
-    width: 350px
+    width: 250px; /* FIX here */
     }
 
 section.equipe nav a {
