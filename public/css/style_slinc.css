@@ -120,7 +120,7 @@ section.home p {
 body {
     background: #fff url(../img/bg1.gif) 0 -350px;
     font-family: "din bold", Arial, Verdana;
-		letter-spacing:-1px;
+		letter-spacing:0px;
     /*
     	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -476,7 +476,7 @@ behavior: url(border-radius.htc);
     margin-top: -65px;
     font-size: 15px;
     text-transform: uppercase;
-    font-family: "din bold", Arial, Verdana;
+    font-family: "din black", Arial, Verdana;
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
@@ -676,7 +676,8 @@ section.portfolio nav a:hover {
 		
 #cboxTitle { 
 	font-family: 'din reg', arial, verdana;
-	font-size:12px;
+	font-size:10px;
+	letter-spacing:1px;
 	text-align:left; margin-left:10px; 
 	margin-right:250px;
 	display:block;
@@ -834,7 +835,7 @@ footer p {
     padding: 20px 0;
     width: 960px;
     margin: auto;
-    font-size: 14px;
+    font-size: 12px;
     color: #fff
     }
 
