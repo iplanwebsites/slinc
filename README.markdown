@@ -9,14 +9,13 @@ links
 TODO
 ------
 
-- Use Jquery analytics Plugin instead of the regular code snip...
 
 - Position css dot on active section in header nav
 
-- BUG: last item of first portfolio scroller, double up the nb of images...
 
 - h1 float glitch during transitions- happen just when going to PF page...
 
+- overlay Color...
 
 
 On Launch
