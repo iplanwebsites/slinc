@@ -12,7 +12,6 @@ TODO
 
 - Position css dot on active section in header nav
 
-
 - h1 float glitch during transitions- happen just when going to PF page...
 
 - overlay Color...

@@ -149,8 +149,10 @@ function loadSection(context, cat){
 		$('section.out').removeClass('out');//cleanup old animation leftover
 		$('section.active').removeClass('active').addClass('out').delay(300).queue(function(next){
 			$('section.out').remove(); //we remove the DOM node once anim is over...
-			$('section.in').removeClass('in');
+		 $('section.in').removeClass('in');
+		
 			next();
+			
 		}); //eo queue
 		$('section.'+cat).addClass('active');
 		

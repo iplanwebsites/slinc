@@ -112,10 +112,11 @@ section.home p {
     transition: all 1.2s ease-in-out
     }
 
-.portfolio h1 {
+/*
+section.portfolio h1 {
     text-align: right;
     float: right
-    }
+    }*/
 
 body {
     background: #fff url(../img/bg1.gif) 0 -350px;
@@ -870,3 +871,12 @@ footer a:active {
     filter: alpha(opacity=0);
     opacity: 0
     }
+
+
+
+/*
+section.portfolio {display:none; position:static;}
+section.equipe .r_col{display:none;}
+#pf_wrap{ display:none;}
+*/
+
