@@ -5,7 +5,6 @@
         "cat": "design",
         "title_en": "EnglishName",
         "title_fr": "JM + JW",
-
         "images": [
             {
                 "caption_en": "",
@@ -45,8 +44,6 @@
         "cat": "design",
         "title_en": "Fronttears",
         "title_fr": "Fronttears",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -62,8 +59,6 @@
         "cat": "design",
         "title_en": "APCM",
         "title_fr": "APCM",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -79,8 +74,6 @@
         "cat": "design",
         "title_en": "Magasin Général du Vieux-Montréal",
         "title_fr": "Magasin Général du Vieux-Montréal",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -96,8 +89,6 @@
         "cat": "design",
         "title_en": "Délices d’autrefois",
         "title_fr": "Délices d’autrefois",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -125,8 +116,6 @@
         "cat": "design",
         "title_en": "Delcraft",
         "title_fr": "Delcraft",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -142,8 +131,6 @@
         "cat": "design",
         "title_en": "Morris McKenzie",
         "title_fr": "Morris McKenzie ",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -159,8 +146,6 @@
         "cat": "pub",
         "title_en": "UNI Training",
         "title_fr": "UNI Training",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -188,8 +173,6 @@
         "cat": "pub",
         "title_en": "Tafisa",
         "title_fr": "Tafisa",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -217,8 +200,6 @@
         "cat": "pub",
         "title_en": "Équipe de course Players",
         "title_fr": "Équipe de course Players",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -234,8 +215,6 @@
         "cat": "pub",
         "title_en": "Chocolaterie Les petites Passions ",
         "title_fr": "Chocolaterie Les petites Passions ",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -251,15 +230,12 @@
             }
         ]
     },
-  
     {
         "id": "st_hubert",
         "nbImg": "1",
         "cat": "pub",
         "title_en": "Rôtisseries St-Hubert",
         "title_fr": "Rôtisseries St-Hubert",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -275,7 +251,6 @@
         "cat": "pub",
         "title_en": "Bleue Dry ",
         "title_fr": "Bleue Dry",
-
         "images": [
             {
                 "caption_en": "",
@@ -285,33 +260,27 @@
             }
         ]
     },
-    
-      {
-          "id": "rio",
-          "nbImg": "1",
-          "cat": "pub",
-          "title_en": "Régie des installation Olympiques",
-          "title_fr": "Régie des installation Olympiques",
-  
-  
-          "images": [
-              {
-                  "caption_en": "",
+    {
+        "id": "rio",
+        "nbImg": "1",
+        "cat": "pub",
+        "title_en": "Régie des installation Olympiques",
+        "title_fr": "Régie des installation Olympiques",
+        "images": [
+            {
+                "caption_en": "",
                 "desc_en": "",
                 "caption_fr": "Panneau d’affichage",
-                  "desc_fr": "Publicité pour le centre de conditionnement du Parc Oympique."
-              }
-          ]
-      },
-      
+                "desc_fr": "Publicité pour le centre de conditionnement du Parc Oympique."
+            }
+        ]
+    },
     {
         "id": "jm_web",
         "nbImg": "1",
         "cat": "web",
         "title_en": "JM",
         "title_fr": "JM",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -327,8 +296,6 @@
         "cat": "web",
         "title_en": "JM",
         "title_fr": "JM",
-
-
         "images": [
             {
                 "caption_en": "",
@@ -344,8 +311,6 @@
         "cat": "web",
         "title_en": "JM",
         "title_fr": "JM",
-
-
         "images": [
             {
                 "caption_en": "",
