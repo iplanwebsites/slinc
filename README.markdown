@@ -10,17 +10,11 @@ TODO
 ------
 
 
-- Position css dot on active section in header nav
-
-- h1 float glitch during transitions- happen just when going to PF page...
-
-- overlay Color...
 
 
 On Launch
 ------
 
-- FR only for launch - comment out LANG link...
 
 - remove redirection script and modify old site.
 
