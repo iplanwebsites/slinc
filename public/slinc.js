@@ -1,5 +1,22 @@
 
+/*
 
+
+ON IE
+
+
+the body class is hcanged ok.
+
+the route is runned...
+
+No transitions...
+
+The content is appended AFTER , and old one never removed...
+Maybe we should rather move out, then replace?
+
+
+
+*/
 
 $(document).ready(function() {
 
@@ -147,12 +164,13 @@ function loadSection(context, cat){
 	
 		//we trigger page transition
 		$('section.out').removeClass('out');//cleanup old animation leftover
-		$('section.active').removeClass('active').addClass('out').delay(300).queue(function(next){
+		$('section.active').addClass('out');
+		$('section.active').removeClass('active').delay(300).queue(function(next){
+			alert('callback! remove');
 			$('section.out').remove(); //we remove the DOM node once anim is over...
-		 $('section.in').removeClass('in');
-		
-			next();
+		 	$('section.in').removeClass('in');
 			
+			next();
 		}); //eo queue
 		$('section.'+cat).addClass('active');
 		
