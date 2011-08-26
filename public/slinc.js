@@ -267,6 +267,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 		// --------------------------------------------
 
 		this.get('/#!/:lang/services', function (context) {// LOAD ROUTE (homepage)
+			alert('services ROUTE!');
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
 				refreshHeader(context);
