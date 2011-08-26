@@ -180,7 +180,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 
 		this.context = this;
 		
-		this.get('/#!/:lang', function (context) {// LOAD ROUTE (homepage)
+		this.get('/#/:lang', function (context) {// LOAD ROUTE (homepage)
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
 				refreshHeader(context);
@@ -202,13 +202,13 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 		// PORTFOLIO
 		// --------------------------------------------
 	
-		this.get('/#!/:lang/portfolio', function (context) {// LOAD ROUTE (homepage)
-			context.redirect('/#!/'+this.params['lang']+'/portfolio/pub');
+		this.get('/#/:lang/portfolio', function (context) {// LOAD ROUTE (homepage)
+			context.redirect('/#/'+this.params['lang']+'/portfolio/pub');
 		});
 		
 
 		
-		this.get('/#!/:lang/portfolio/:sub', function (context) {// LOAD ROUTE (homepage)
+		this.get('/#/:lang/portfolio/:sub', function (context) {// LOAD ROUTE (homepage)
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
 				refreshHeader(context);
@@ -237,11 +237,11 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 		// EQUIPE
 		// --------------------------------------------
 	
-		this.get('/#!/:lang/equipe', function (context) {// LOAD ROUTE (homepage)
-			context.redirect('/#!/'+this.params['lang']+'/equipe/marc');
+		this.get('/#/:lang/equipe', function (context) {// LOAD ROUTE (homepage)
+			context.redirect('/#/'+this.params['lang']+'/equipe/marc');
 		});
 		
-		this.get('/#!/:lang/equipe/:sub', function (context) {// LOAD ROUTE (homepage)
+		this.get('/#/:lang/equipe/:sub', function (context) {// LOAD ROUTE (homepage)
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
 				refreshHeader(context);
@@ -266,7 +266,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 		// SERVICE
 		// --------------------------------------------
 
-		this.get('/#!/:lang/services', function (context) {// LOAD ROUTE (homepage)
+		this.get('/#/:lang/services', function (context) {// LOAD ROUTE (homepage)
 			alert('services ROUTE!');
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
@@ -310,7 +310,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 				});		
 		});
 		
-		this.get('/#!/:lang/contact', function (context) {  //CONTACT	
+		this.get('/#/:lang/contact', function (context) {  //CONTACT	
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
 				refreshHeader(context);
@@ -334,7 +334,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 
 	//TODO: cgheck if cookie exists here, and redirect to right language page accordingly.
 	setLang('undef'); //HARDCODED!
-	sammy.run('/#!/fr');
+	sammy.run('/#/fr');
 
 }); //eo doc ready
 
