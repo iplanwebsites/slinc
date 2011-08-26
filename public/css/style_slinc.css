@@ -24,18 +24,18 @@ border-radius fixes for ugly browsers
 
 .no-borderradius .service_graph .circle, .no-borderradius .service_graph h3{display:none;}
 
-
+/*
 section.active{background:#0f0;}
 section.out{background:#f00;}
 section.in{background:#00f;}
-
+*/
 
 /*  test FOR IE stupid class handling... */
-
+/*
 section{display:none;}
 body.home section.home, body.contact section.contact, body.services section.services, body.portfolio section.portfolio, body.equipe section.equipe{display:block;}
 
-
+*/
 
 body, html{height:100%; min-height:100%;}
 html.js #seo{ display:none;}

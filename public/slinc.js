@@ -18,6 +18,13 @@ the OUT/active class isn't added...
 
 maybe because the DOM isn't ready, since the templates files aren't cached in local???
 
+quit using pushstate...
+
+maybe load the sections directly in "section tags", all preloaded?
+the use "replace", with the optional caching metod as in MD project...
+
+
+
 
 
 */
@@ -171,7 +178,7 @@ function loadSection(context, cat){
 		$('section.active').addClass('out');
 		//$('section.out').empty().remove();
 		$('section.active').removeClass('active').delay(300).queue(function(next){
-			alert('callback! remove');
+			//alert('callback! remove');
 			$('section.out').empty().remove(); //we remove the DOM node once anim is over...
 		 	$('section.in').removeClass('in');
 			
