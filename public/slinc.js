@@ -165,10 +165,10 @@ function loadSection(context, cat){
 		//we trigger page transition
 		$('section.out').removeClass('out');//cleanup old animation leftover
 		$('section.active').addClass('out');
-		$('section.out').remove();
+		$('section.out').empty().remove();
 		$('section.active').removeClass('active').delay(300).queue(function(next){
 			alert('callback! remove');
-			$('section.out').remove(); //we remove the DOM node once anim is over...
+			$('section.out').empty().remove(); //we remove the DOM node once anim is over...
 		 	$('section.in').removeClass('in');
 			
 			next();
