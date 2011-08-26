@@ -25,9 +25,9 @@ border-radius fixes for ugly browsers
 .no-borderradius .service_graph .circle, .no-borderradius .service_graph h3{display:none;}
 
 
-.active{background:#0f0;}
-.out{background:#f00;}
-.in{background:#00f;}
+section.active{background:#0f0;}
+section.out{background:#f00;}
+section.in{background:#00f;}
 
 
 
