@@ -14,6 +14,7 @@ No transitions...
 The content is appended AFTER , and old one never removed...
 Maybe we should rather move out, then replace?
 
+the OUT class isn't addigned...
 
 
 */
@@ -165,7 +166,7 @@ function loadSection(context, cat){
 		//we trigger page transition
 		$('section.out').removeClass('out');//cleanup old animation leftover
 		$('section.active').addClass('out');
-		$('section.out').empty().remove();
+		//$('section.out').empty().remove();
 		$('section.active').removeClass('active').delay(300).queue(function(next){
 			alert('callback! remove');
 			$('section.out').empty().remove(); //we remove the DOM node once anim is over...
