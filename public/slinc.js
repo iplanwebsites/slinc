@@ -23,8 +23,15 @@ quit using pushstate...
 maybe load the sections directly in "section tags", all preloaded?
 the use "replace", with the optional caching metod as in MD project...
 
+TEST MD with the hash...
+OK, the hast system on MD, and the loading in section is working well.
 
-
+replicate this system:
+ - loader function ,
+ - transition classes (same than MD)
+ - caching true, false for the portfolio
+ - load all templates at the begining...
+ - fade images on load... (after each loaded template... targeting images that has the "fading" class...)
 
 
 */
