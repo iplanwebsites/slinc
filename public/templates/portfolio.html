@@ -2,7 +2,7 @@
 	<% for ( var i = 0; i < projects.length; i++ ) { %>
 <li>
 	<a href="portfolio/<%= projects[i].id %>/1.jpg" rel="box_<%=i%>"  title="<strong><%= projects[i].title_fr %> <em>&#62;</em><%= projects[i].images[0]['caption_'+lang] %>  </strong> <em>&#62;</em><%= projects[i].images[0]['desc_'+lang] %>" class="lightboxlink">
-	<img src="portfolio/<%= projects[i].id %>/tb1.jpg" width="210" height="170" alt="<%= projects[i]['title_'+lang] %> (<%= projects[i].id %>)" data-id="<%= projects[i].id %>" />
+	<img src="portfolio/<%= projects[i].id %>/tb1.jpg" width="210" height="170" alt="<%= projects[i]['title_'+lang] %> (<%= projects[i].id %>)" data-id="<%= projects[i].id %>" class="loading" />
 	</a>
 
 <% for ( var k = 2; k <= projects[i].nbImg; k++ ) { %>

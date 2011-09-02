@@ -33,6 +33,12 @@ replicate this system:
  - load all templates at the begining...
  - fade images on load... (after each loaded template... targeting images that has the "fading" class...)
 
+imag fade on load does NOT work...
+maybe it should be in the callback instead of loadsection
+even is not binded......
+
+Section buggy: PF and EQUIPE only... subsection problem??
+
 
 */
 
@@ -186,12 +192,25 @@ function loadSection(context, cat){
 		//$('section.out').empty().remove();
 		$('section.active').removeClass('active').delay(300).queue(function(next){
 			//alert('callback! remove');
-			$('section.out').empty().remove(); //we remove the DOM node once anim is over...
+		//	$('section.out').empty().remove(); //we remove the DOM node once anim is over...
 		 	$('section.in').removeClass('in');
 			
 			next();
 		}); //eo queue
+
+
+		
 		$('section.'+cat).addClass('active');
+		
+		//we fade images when they appear in CSS3.
+		$('img.loading').one('load', function() {//FADE IMG on load...
+			alert('loaded!');
+		  $(this).removeClass('loading');
+		}).each(function() {
+		  if(this.complete) $(this).load().removeClass('loading'); //fix caching event not firing
+		});
+		
+		
 		
 		//$('section:not(.active)').remove(); 
 		
@@ -223,7 +242,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 				refreshHeader(context);
 			}
 			context.render('templates/section_home.html', {lang: lang})
-        .appendTo(context.$element('#sections')).then(function(content) {
+        .replace(context.$element('#sections')).then(function(content) {
 					loadSection(context, 'home'); 
 				
 
@@ -254,7 +273,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			
 			if($('section.portfolio').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_portfolio.html', {lang: lang})
-	        .appendTo(context.$element('#sections')).then(function(content) {
+	        .replace(context.$element('#sections')).then(function(content) {
 						loadSection(context, 'portfolio'); 
 				
 						//sortContent(context);
@@ -287,7 +306,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			
 			if($('section.equipe').length <= 0){// if main PF section isn't loaded yet...
 				 context.render('templates/section_equipe.html', {lang: lang})
-	        .appendTo(context.$element('#sections')).then(function(content) {
+	        .replace(context.$element('#sections')).then(function(content) {
 						loadSection(context, 'equipe'); 
 						
 						//sortContent(context);
@@ -310,7 +329,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 				refreshHeader(context);
 			}
 			context.render('templates/section_service.html', {lang: lang})
-        .appendTo(context.$element('#sections')).then(function(content) {
+        .replace(context.$element('#sections')).then(function(content) {
 					loadSection(context, 'service'); 
 				
 					//sortContent(context);
@@ -354,7 +373,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			
 			context.render('templates/section_contact.html', {lang: lang})
-        .appendTo(context.$element('#sections')).then(function(content) {
+        .replace(context.$element('#sections')).then(function(content) {
 					loadSection(context, 'contact'); 
 					
 						
