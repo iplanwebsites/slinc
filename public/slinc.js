@@ -144,6 +144,8 @@ function loadPortfolio(context, cat){
 				}
 			}});
 			
+			bindLoadingImages();
+			
 			/*
 			$('ul.pf li img').click( function(){
 				alert('open '+ $(this).attr('data-id'));
@@ -171,6 +173,7 @@ function loadBio(context, cat){
 		$('.equipe .box .bio.'+cat).addClass('active');
 		//alert($('.equipe .box .bio.'+cat).length + cat);
 		
+		bindLoadingImages();
 		
 	/*	context.render('templates/portfolio.html', {lang: lang, projects:projects, cat:cat})
       .replace(context.$element('#pf_wrap')).then(function(content) {
@@ -179,6 +182,16 @@ function loadBio(context, cat){
 			
 } // eo function load pf
 	
+	
+	function bindLoadingImages(){
+	
+		//we fade images when they appear in CSS3.
+		$('img.loading').one('load', function() {//FADE IMG on load...
+		  $(this).removeClass('loading');
+		}).each(function() {
+		  if(this.complete) $(this).load().removeClass('loading');  //fix caching event not firing
+		});
+	}
 	
 	
 function loadSection(context, cat){
@@ -202,13 +215,7 @@ function loadSection(context, cat){
 		
 		$('section.'+cat).addClass('active');
 		
-		//we fade images when they appear in CSS3.
-		$('img.loading').one('load', function() {//FADE IMG on load...
-			alert('loaded!');
-		  $(this).removeClass('loading');
-		}).each(function() {
-		  if(this.complete) $(this).load().removeClass('loading'); //fix caching event not firing
-		});
+		bindLoadingImages();
 		
 		
 		
@@ -304,13 +311,13 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			context.sub = this.params['sub'];
 			
-			if($('section.equipe').length <= 0){// if main PF section isn't loaded yet...
+			if($('section.equipe').length <= 0){// if main EQUIPE section isn't loaded yet...
 				 context.render('templates/section_equipe.html', {lang: lang})
 	        .replace(context.$element('#sections')).then(function(content) {
 						loadSection(context, 'equipe'); 
 						
 						//sortContent(context);
-						loadBio(context, context.sub); //we then init the portfolio caroussel.
+						loadBio(context, context.sub); //we then init the specefic bio.
 					});	// eo render
 			}else{
 				loadBio(context, context.sub);
@@ -323,7 +330,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 		// --------------------------------------------
 
 		this.get('/#/:lang/services', function (context) {// LOAD ROUTE (homepage)
-			alert('services ROUTE!');
+		//	alert('services ROUTE!');
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
 				refreshHeader(context);

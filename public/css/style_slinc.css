@@ -615,7 +615,12 @@ ul.pf li img {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
     opacity: 0.8;
-    cursor: pointer
+    cursor: pointer;
+		-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out
+
     }
 
 ul.pf li img:hover {

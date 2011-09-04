@@ -1,7 +1,6 @@
 [
     {
         "id": "jm",
-        "nbImg": "5",
         "cat": "design",
         "title_en": "EnglishName",
         "title_fr": "JM + JW",
@@ -40,7 +39,6 @@
     },
     {
         "id": "fronttears",
-        "nbImg": "1",
         "cat": "design",
         "title_en": "Fronttears",
         "title_fr": "Fronttears",
@@ -55,7 +53,6 @@
     },
     {
         "id": "apcm",
-        "nbImg": "1",
         "cat": "design",
         "title_en": "APCM",
         "title_fr": "APCM",
@@ -70,7 +67,6 @@
     },
     {
         "id": "magasin_general",
-        "nbImg": "1",
         "cat": "design",
         "title_en": "Magasin Général du Vieux-Montréal",
         "title_fr": "Magasin Général du Vieux-Montréal",
@@ -85,7 +81,6 @@
     },
     {
         "id": "delices",
-        "nbImg": "3",
         "cat": "design",
         "title_en": "Délices d’autrefois",
         "title_fr": "Délices d’autrefois",
@@ -112,7 +107,6 @@
     },
     {
         "id": "delcraft",
-        "nbImg": "1",
         "cat": "design",
         "title_en": "Delcraft",
         "title_fr": "Delcraft",
@@ -127,7 +121,6 @@
     },
     {
         "id": "morris_mckenzie",
-        "nbImg": "1",
         "cat": "design",
         "title_en": "Morris McKenzie",
         "title_fr": "Morris McKenzie ",
@@ -142,7 +135,6 @@
     },
     {
         "id": "uni_training",
-        "nbImg": "3",
         "cat": "pub",
         "title_en": "UNI Training",
         "title_fr": "UNI Training",
@@ -169,7 +161,6 @@
     },
     {
         "id": "tafisa",
-        "nbImg": "3",
         "cat": "pub",
         "title_en": "Tafisa",
         "title_fr": "Tafisa",
@@ -196,7 +187,6 @@
     },
     {
         "id": "players",
-        "nbImg": "1",
         "cat": "pub",
         "title_en": "Équipe de course Players",
         "title_fr": "Équipe de course Players",
@@ -211,7 +201,6 @@
     },
     {
         "id": "petites_passions",
-        "nbImg": "2",
         "cat": "pub",
         "title_en": "Chocolaterie Les petites Passions ",
         "title_fr": "Chocolaterie Les petites Passions ",
@@ -232,7 +221,6 @@
     },
     {
         "id": "st_hubert",
-        "nbImg": "1",
         "cat": "pub",
         "title_en": "Rôtisseries St-Hubert",
         "title_fr": "Rôtisseries St-Hubert",
@@ -247,7 +235,6 @@
     },
     {
         "id": "labatt",
-        "nbImg": "1",
         "cat": "pub",
         "title_en": "Bleue Dry ",
         "title_fr": "Bleue Dry",
@@ -262,7 +249,6 @@
     },
     {
         "id": "rio",
-        "nbImg": "1",
         "cat": "pub",
         "title_en": "Régie des installation Olympiques",
         "title_fr": "Régie des installation Olympiques",
@@ -277,7 +263,6 @@
     },
     {
         "id": "jm_web",
-        "nbImg": "1",
         "cat": "web",
         "title_en": "JM",
         "title_fr": "JM",
@@ -292,7 +277,6 @@
     },
     {
         "id": "jm_email",
-        "nbImg": "1",
         "cat": "web",
         "title_en": "JM",
         "title_fr": "JM",
@@ -307,7 +291,6 @@
     },
     {
         "id": "jm_adwords",
-        "nbImg": "1",
         "cat": "web",
         "title_en": "JM",
         "title_fr": "JM",
