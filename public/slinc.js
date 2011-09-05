@@ -80,25 +80,101 @@ function sortContent(context){
 	}
 }*/
 
+
 function setLang(langParam){
-	lang = langParam;
-	
-	if(lang == "fr"){
+	if(langParam == "fr"){
+		lang = 'fr';
 		$('body').addClass('fr');
 		$('body').removeClass('en');
 	}else{
+		lang = 'en';
 		$('body').addClass('en');
 		$('body').removeClass('fr');
 	}	
-	//here, we also reload the header content...
+}
+
+
+
+function initTemplates(context, callbackHome){  // !!!!!
 	
+	renderTemplate(context, 'footer', '/templates/footer.html', {lang: lang}, true);
+	renderTemplate(context, 'header', '/templates/header.html', {lang: lang}, true, function(context){
+		$('header .bt').unbind('click touch').bind('click touch', function() {//Adding action to header buttons (mindless of route changes)
+			scrollBase();
+		});
+	});
+	renderTemplate(context, 'section#info', '/templates/info.html', {title: "hello!"}, true);	
+	renderTemplate(context, 'section#bio', '/templates/bio.html', {title: "hello!"}, true);	
+	renderTemplate(context, 'section#credit', '/templates/credit.html', {title: "hello!"}, true);	
+	renderTemplate(context, 'section#home', '/templates/home.html', {gal: Gallery.all()}, true, function(context){
+		callbackHome(context);
+		//bind action to next / prev bt
+	
+		$('#prev').unbind('click touch').bind('click touch', function(){
+			//$(this).addClass('binded');
+			pan(-5); //we want to return to menu, not just pan back...
+			$('#prev').removeClass('off'); //just to bypass the throttle delay...
+		});
+		$('#next').unbind('click touch').bind('click touch', function(){
+			$(this).addClass('binded');
+			pan(1);
+		});
+	});
+}
+
+function bodyClass(context, section){  // !!!!!
+ //if(! $('body').hasClass(section)){  //we make sure we don'T hcange class, if we remain in the same main section
+	$('body').removeClass('home portfolio service contact equipe');
+	$('body').addClass(section);
+	
+	//we trigger page transition
+	$('section.out').removeClass('out');//cleanup old animation leftover
+	
+	$('section.active').removeClass('active in').addClass('out').delay(1000).queue(function(next){
+	 		$('section.in').removeClass('in');  //let the new section animate to it's normal state.
+			//also remove the 'out' class...
+			$('section.out').removeClass('out'); 
+		next();
+	}); //eo queue
+	$('section#'+section).addClass('in active');
+	
+	bindLoadingImages();
 	
 }
 
+
+
+function renderTemplate(context, elem, path, templateData, cache, callback){  // !!!!!
+	if( $(elem).hasClass('inDom') && cache){
+		if($.isFunction(callback)){
+			callback(context); //if temlate already loaded, we just call the callBakc right away.
+		}
+	}else{
+	  context.render(path, templateData)
+	   .replace(context.$element(elem)).then(function(content) {
+				$(elem).addClass('inDom');
+				if($.isFunction(callback)){
+					callback(context);
+				}
+	  });
+	}
+}
+
+
 function refreshHeader(context){	
+	
+	renderTemplate(context, 'header', '/templates/header.html', {lang: lang}, true, function(context){
+	/*	$('header .bt').unbind('click touch').bind('click touch', function() {//Adding action to header buttons (mindless of route changes)
+			scrollBase();
+		});*/
+		//TODO: bind event specefic to HEADER!
+	});
+	/*
 	context.render('templates/header.html', {lang: lang})
     .replace(context.$element('header')).then(function(content) {
-			//TODO: bind event specefic to HEADER!
+			
+		});*/
+		renderTemplate(context, 'footer', '/templates/footer.html', {lang: lang}, true, function(context){
 		});
 		
 		context.render('templates/footer.html', {lang: lang})
@@ -193,8 +269,10 @@ function loadBio(context, cat){
 		});
 	}
 	
-	
+
 function loadSection(context, cat){
+	bodyClass(context, cat); //new versoin of function...
+	/*
 		//we set body class
 		$('body').removeClass('home portfolio service contact equipe');
 		$('body').addClass(cat);
@@ -211,20 +289,12 @@ function loadSection(context, cat){
 			next();
 		}); //eo queue
 
-
-		
 		$('section.'+cat).addClass('active');
 		
 		bindLoadingImages();
-		
-		
-		
-		//$('section:not(.active)').remove(); 
-		
-		//Once the anim is over, destroy the old sectoin node...
-		//$('.graph_home.centered')
-		
-} // eo function load pf
+		*/
+
+} // eo function load section
 
 	
 
@@ -248,6 +318,18 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 				setLang(this.params['lang']);
 				refreshHeader(context);
 			}
+			
+			renderTemplate(context, 'section.home', '/templates/section_home.html', {lang: lang}, true, function(context){
+				loadSection(context, 'home'); 
+			
+				$('.graph_home.centered').delay(1000).queue(function(next){
+					$('.graph_home.centered').removeClass('centered'); //animate homepage circles to take their places...
+					$('section.home p.invisible').removeClass('invisible');
+					next();
+				}); //eo queue
+			}); //eo renterTemplate
+			
+			/*
 			context.render('templates/section_home.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
 					loadSection(context, 'home'); 
@@ -259,7 +341,9 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 						next();
 					}); //eo queue
 					//sortContent(context);
-				});		
+				});
+				*/
+						
 		});
 		
 		// PORTFOLIO
@@ -278,20 +362,24 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			context.sub = this.params['sub'];
 			
-			if($('section.portfolio').length <= 0){// if main PF section isn't loaded yet...
-				 context.render('templates/section_portfolio.html', {lang: lang})
-	        .replace(context.$element('#sections')).then(function(content) {
-						loadSection(context, 'portfolio'); 
+		//	if($('section.portfolio').hasClass('inDom') <= 0){// if main PF section isn't loaded yet...
 				
-						//sortContent(context);
+			renderTemplate(context, 'section.portfolio', '/templates/section_portfolio.html', {lang: lang}, true, function(context){
+				loadSection(context, 'portfolio'); 
+				loadPortfolio(context, context.sub); //we then init the portfolio caroussel.
+			}); //eo renterTemplate
+			/*
+				 context.render('templates/section_portfolio.html', {lang: lang})
+	        .replace(context.$element('section.portfolio')).then(function(content) {
+	
+						loadSection(context, 'portfolio'); 
+
 						loadPortfolio(context, context.sub); //we then init the portfolio caroussel.
 
-						//alert("pf = " + sammy.pf['test']['desc_fr']);
-
-					});	// eo render
-			}else{
-				loadPortfolio(context, context.sub);
-			}
+					});	// eo render*/
+		//	}else{
+		//		loadPortfolio(context, context.sub);
+		//	}
 
 		}); //eo route
 		// 
@@ -311,17 +399,31 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 			}
 			context.sub = this.params['sub'];
 			
-			if($('section.equipe').length <= 0){// if main EQUIPE section isn't loaded yet...
-				 context.render('templates/section_equipe.html', {lang: lang})
+			
+			
+			//if($('section.equipe').length <= 0){// if main EQUIPE section isn't loaded yet...
+				 
+				renderTemplate(context, 'section.equipe', '/templates/section_equipe.html', {lang: lang}, true, function(context){
+					loadSection(context, 'equipe'); 
+					//sortContent(context);
+					loadBio(context, context.sub); //we then init the specefic bio.			}); //eo renterTemplate
+				}); //eo renterTemplate
+				
+				/*
+				context.render('templates/section_equipe.html', {lang: lang})
 	        .replace(context.$element('#sections')).then(function(content) {
 						loadSection(context, 'equipe'); 
 						
 						//sortContent(context);
 						loadBio(context, context.sub); //we then init the specefic bio.
 					});	// eo render
-			}else{
+					*/
+					
+		//	}else{
 				loadBio(context, context.sub);
-			}
+		//	}
+			
+			
 		}); //eo route
 		
 		
@@ -335,11 +437,14 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 				setLang(this.params['lang']);
 				refreshHeader(context);
 			}
-			context.render('templates/section_service.html', {lang: lang})
+			
+		/*	context.render('templates/section_service.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
+	
+	*/
+		renderTemplate(context, 'section.service', '/templates/section_service.html', {lang: lang}, true, function(context){
+			
 					loadSection(context, 'service'); 
-				
-					//sortContent(context);
 					
 					if(typeof(graphInterval) != 'undefined'){
 						clearInterval(graphInterval);
@@ -367,18 +472,22 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 											//We're not on the service page anymore... destroy interval!
 											clearInterval(graphInterval);
 										}
-						}, 2000); //2 seconds rotating anim
-				
-					
-				});		
-		});
+						}, 2000); //eo setinterval, 2 seconds rotating anim
+									
+				});		//eo render?
+		});// eo route
 		
 		this.get('/#/:lang/contact', function (context) {  //CONTACT	
 			if(lang != this.params['lang']){ 
 				setLang(this.params['lang']);
 				refreshHeader(context);
 			}
-			
+			renderTemplate(context, 'section.contact', '/templates/section_contact.html', {lang: lang}, true, function(context){
+				loadSection(context, 'contact'); 
+
+			}); //eo renterTemplate
+			// 
+			/*
 			context.render('templates/section_contact.html', {lang: lang})
         .replace(context.$element('#sections')).then(function(content) {
 					loadSection(context, 'contact'); 
@@ -386,7 +495,7 @@ $.getJSON('data/portfolio.json', function(data) { //cached...
 						
 					//sortContent(context);
 					//TODO: bind event specefic to this section!
-				});		
+				});		*/
 		}); //end "get #/"
 	
 		
