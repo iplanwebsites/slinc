@@ -136,7 +136,7 @@ function bodyClass(context, section){  // !!!!!
 			$('section.out').removeClass('out'); 
 		next();
 	}); //eo queue
-	$('section#'+section).addClass('in active');
+	$('section.'+section).addClass('in active');
 	
 	bindLoadingImages();
 	
