@@ -126,7 +126,7 @@ section.in {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
-    margin-top: -10px
+    margin-top: -100%
     }
 
 section.out {
