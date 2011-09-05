@@ -123,7 +123,9 @@ function initTemplates(context, callbackHome){  // !!!!!
 }
 
 function bodyClass(context, section){  // !!!!!
- //if(! $('body').hasClass(section)){  //we make sure we don'T hcange class, if we remain in the same main section
+if(! $('body').hasClass(section)){  //we make sure we don'T hcange class, if we remain in the same main section
+
+
 	$('body').removeClass('home portfolio service contact equipe');
 	$('body').addClass(section);
 	
@@ -139,7 +141,7 @@ function bodyClass(context, section){  // !!!!!
 	$('section.'+section).addClass('in active');
 	
 	bindLoadingImages();
-	
+}//end if
 }
 
 
