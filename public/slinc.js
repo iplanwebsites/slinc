@@ -45,9 +45,10 @@ Section buggy: PF and EQUIPE only... subsection problem??
 $(document).ready(function() {
 
 //redirection. - remove once site is live...
+/*
 if(window.location.hostname == 'www.slincom.ca'){
 	window.location = "http://slincom.ca/page2.php";
-}
+}*/
 
 //fadeIn animation
 $('#seo').remove();

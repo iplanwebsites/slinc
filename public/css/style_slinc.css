@@ -76,6 +76,7 @@ html.js #seo{ display:none;}
     position: relative;
     height: 920px;  /* 670 is usually the max... */
     overflow: hidden;
+		border:1px solid #ccc;
 		-webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -259,6 +260,8 @@ header.wrapper {
     padding-top: 5px;
     height: 80px;
     margin: 0 auto;
+		border:1px solid #ccc;
+		border-top:0;
     }
 
 img.logo {
