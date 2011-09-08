@@ -221,7 +221,14 @@ function loadPortfolio(context, cat){
 				}else{
 					return "{current} / {total}";
 				}
-			}});
+			}});// eo colorbox
+			
+			$('.lightboxlink').bind('click touch', function(){ /* so we can css-target color box current project */
+				var name = $(this).children("img").attr('data-id');
+				$('#cboxContent').removeClass(); //remove all previous project classes
+				$('#cboxContent').addClass(name);
+
+			})
 			
 			bindLoadingImages();
 			

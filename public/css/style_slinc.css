@@ -731,7 +731,7 @@ section.portfolio nav a:hover {
     z-index: 2;
     background: #444;
     cursor: pointer
-    }
+}
 
 
 /* lightbox */
@@ -741,6 +741,7 @@ section.portfolio nav a:hover {
 	font-size:13px;
 	line-height:1.1em;
 }
+
 #cboxTitle em{ color: #bed600;
 	font-family: 'din black', arial, verdana;
 	margin-left:5px; margin-right:5px;
@@ -942,4 +943,13 @@ footer a:active {
     filter: alpha(opacity=0);
     opacity: 0
     }
+
+
+
+
+#cboxContent.jm_adwords #cboxCurrent, #cboxContent.morris_mckenzie #cboxCurrent, #cboxContent.rio #cboxCurrent{
+	display:none; top:3000px; /* fix a bug in colorbox.js*/
+	}
+
+
 
