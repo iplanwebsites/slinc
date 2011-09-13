@@ -150,7 +150,7 @@
         
 		settings.rel = settings.rel || element.rel || 'nofollow';
 		settings.href = settings.href || $(element).attr('href');
-		settings.title = settings.title || element.title;
+		settings.title = settings.title || $(element).attr('data-title'); //IPLAN EDIT... settings.title = settings.title || element.title;
         
         if (typeof settings.href === "string") {
             settings.href = $.trim(settings.href);
