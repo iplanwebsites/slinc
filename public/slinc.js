@@ -228,7 +228,12 @@ function loadPortfolio(context, cat){
 				$('#cboxContent').removeClass(); //remove all previous project classes
 				$('#cboxContent').addClass(name);
 
-			})
+			});
+			
+			/* remove alt text on PF images*/
+			$('.lightboxlink').bind('mouseover', function(){ 
+				$(this).removeAttr('alt');
+			});
 			
 			bindLoadingImages();
 			
