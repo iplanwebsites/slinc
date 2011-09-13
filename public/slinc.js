@@ -231,7 +231,7 @@ function loadPortfolio(context, cat){
 			});
 			
 			/* remove alt text on PF images*/
-			$('.lightboxlink').bind('mouseover', function(){ 
+			$('.lightboxlink img').bind('mouseover', function(){ 
 				$(this).removeAttr('alt');
 			});
 			
