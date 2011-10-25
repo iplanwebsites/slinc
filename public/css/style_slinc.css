@@ -866,7 +866,7 @@ section.equipe nav a img:hover {
 section.equipe nav a.active img {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=50);
-    opacity:1
+    opacity:1	
     }
 
 /* CONTACT
